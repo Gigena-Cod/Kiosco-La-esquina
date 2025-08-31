@@ -16,5 +16,10 @@ namespace Kiosco_La_esquina.infrastructure.features.Employees.EmployeeDeletionFl
         {
             InitializeComponent();
         }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
