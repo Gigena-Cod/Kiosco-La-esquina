@@ -55,7 +55,6 @@
             ventasPorMesToolStripMenuItem = new ToolStripMenuItem();
             comparativaDeProductosToolStripMenuItem = new ToolStripMenuItem();
             empleadosToolStripMenuItem = new ToolStripMenuItem();
-            listadosDeEmpleadosToolStripMenuItem = new ToolStripMenuItem();
             listadoDeEmpleadosToolStripMenuItem = new ToolStripMenuItem();
             agregarEmpleadoToolStripMenuItem = new ToolStripMenuItem();
             modificarEmpleadoToolStripMenuItem = new ToolStripMenuItem();
@@ -232,40 +231,35 @@
             // 
             // empleadosToolStripMenuItem
             // 
-            empleadosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { listadosDeEmpleadosToolStripMenuItem, listadoDeEmpleadosToolStripMenuItem, agregarEmpleadoToolStripMenuItem, modificarEmpleadoToolStripMenuItem, eliminarEmpleadoToolStripMenuItem });
+            empleadosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { listadoDeEmpleadosToolStripMenuItem, agregarEmpleadoToolStripMenuItem, modificarEmpleadoToolStripMenuItem, eliminarEmpleadoToolStripMenuItem });
             empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
             empleadosToolStripMenuItem.Size = new Size(77, 20);
             empleadosToolStripMenuItem.Text = "Empleados";
             // 
-            // listadosDeEmpleadosToolStripMenuItem
-            // 
-            listadosDeEmpleadosToolStripMenuItem.Name = "listadosDeEmpleadosToolStripMenuItem";
-            listadosDeEmpleadosToolStripMenuItem.Size = new Size(194, 22);
-            listadosDeEmpleadosToolStripMenuItem.Text = "Listados de empleados";
-            // 
             // listadoDeEmpleadosToolStripMenuItem
             // 
             listadoDeEmpleadosToolStripMenuItem.Name = "listadoDeEmpleadosToolStripMenuItem";
-            listadoDeEmpleadosToolStripMenuItem.Size = new Size(194, 22);
+            listadoDeEmpleadosToolStripMenuItem.Size = new Size(189, 22);
             listadoDeEmpleadosToolStripMenuItem.Text = "Listado de empleados";
+            listadoDeEmpleadosToolStripMenuItem.Click += listadoDeEmpleadosToolStripMenuItem_Click;
             // 
             // agregarEmpleadoToolStripMenuItem
             // 
             agregarEmpleadoToolStripMenuItem.Name = "agregarEmpleadoToolStripMenuItem";
-            agregarEmpleadoToolStripMenuItem.Size = new Size(194, 22);
+            agregarEmpleadoToolStripMenuItem.Size = new Size(189, 22);
             agregarEmpleadoToolStripMenuItem.Text = "Agregar empleado";
             agregarEmpleadoToolStripMenuItem.Click += agregarEmpleadoToolStripMenuItem_Click;
             // 
             // modificarEmpleadoToolStripMenuItem
             // 
             modificarEmpleadoToolStripMenuItem.Name = "modificarEmpleadoToolStripMenuItem";
-            modificarEmpleadoToolStripMenuItem.Size = new Size(194, 22);
+            modificarEmpleadoToolStripMenuItem.Size = new Size(189, 22);
             modificarEmpleadoToolStripMenuItem.Text = "Modificar empleado";
             // 
             // eliminarEmpleadoToolStripMenuItem
             // 
             eliminarEmpleadoToolStripMenuItem.Name = "eliminarEmpleadoToolStripMenuItem";
-            eliminarEmpleadoToolStripMenuItem.Size = new Size(194, 22);
+            eliminarEmpleadoToolStripMenuItem.Size = new Size(189, 22);
             eliminarEmpleadoToolStripMenuItem.Text = "Eliminar empleado";
             eliminarEmpleadoToolStripMenuItem.Click += eliminarEmpleadoToolStripMenuItem_Click;
             // 
@@ -337,7 +331,6 @@
         private ToolStripMenuItem manualDeUsuarioToolStripMenuItem;
         private ToolStripMenuItem acercaDeToolStripMenuItem;
         private ToolStripMenuItem empleadosToolStripMenuItem;
-        private ToolStripMenuItem listadosDeEmpleadosToolStripMenuItem;
         private ToolStripMenuItem listadoDeEmpleadosToolStripMenuItem;
         private ToolStripMenuItem agregarEmpleadoToolStripMenuItem;
         private ToolStripMenuItem modificarEmpleadoToolStripMenuItem;
