@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "tVkmWoq6q1s=",
+  "dgSpecHash": "R6qyBOwrnao=",
   "success": true,
   "projectFilePath": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\Kiosco-La-esquina.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Nahuel Gigena\\.nuget\\packages\\system.configuration.configurationmanager\\9.0.8\\system.configuration.configurationmanager.9.0.8.nupkg.sha512",
+    "C:\\Users\\Nahuel Gigena\\.nuget\\packages\\system.data.oledb\\9.0.8\\system.data.oledb.9.0.8.nupkg.sha512",
+    "C:\\Users\\Nahuel Gigena\\.nuget\\packages\\system.diagnostics.eventlog\\9.0.8\\system.diagnostics.eventlog.9.0.8.nupkg.sha512",
+    "C:\\Users\\Nahuel Gigena\\.nuget\\packages\\system.diagnostics.performancecounter\\9.0.8\\system.diagnostics.performancecounter.9.0.8.nupkg.sha512",
+    "C:\\Users\\Nahuel Gigena\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.8\\system.security.cryptography.protecteddata.9.0.8.nupkg.sha512"
+  ],
   "logs": []
 }
