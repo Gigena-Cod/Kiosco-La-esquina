@@ -7,12 +7,15 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="domain\services\" />
-    <Folder Include="domain\repository\" />
     <Folder Include="infrastructure\helpers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.OleDb" Version="9.0.8" />
   </ItemGroup>
 
 </Project>

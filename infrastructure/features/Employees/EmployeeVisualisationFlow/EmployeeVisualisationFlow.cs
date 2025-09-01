@@ -1,18 +1,24 @@
 ﻿using Kiosco_La_esquina.domain.models;
+using Kiosco_La_esquina.domain.repository;
+using Kiosco_La_esquina.domain.services;
+using System.Data;
 
 namespace Kiosco_La_esquina.infrastructure.features.Employees.EmployeeVisualisationFlow
 {
     public partial class EmployeeVisualisationFlow : Form
     {
+
         private List<Employee> employees = new List<Employee>();
+        private Repository _repository;
 
         public EmployeeVisualisationFlow()
         {
             InitializeComponent();
+            _repository = new Repository();
             ConfigureDataGridView();
             LoadEmployees();
         }
-
+         
         private void EmployeeVisualisationFlow_Load(object sender, EventArgs e)
         {
 
@@ -94,19 +100,14 @@ namespace Kiosco_La_esquina.infrastructure.features.Employees.EmployeeVisualisat
 
         private void LoadEmployees()
         {
-            // Ejemplo de datos (en la práctica los tomarías de la base de datos)
-            employees = new List<Employee>
-            {
-                new Employee { FirstName="John", LastName="Doe", Identifier="40390876", Email="john.doe@example.com", Role="Cashier", Salary=35000, HireDate=DateTime.Parse("2023-01-15") },
-                new Employee { FirstName="Jane", LastName="Smith", Identifier="40210876", Email="jane.smith@example.com", Role="Manager", Salary=50000, HireDate=DateTime.Parse("2022-11-01") }
-            };
+            EmployeeService service = new EmployeeService();
+            employees = service.GetAllEmployees(); 
 
-            // Vincular la lista al DataGridView
-            dataGridViewEmployees.DataSource = null; // reset
+            dataGridViewEmployees.DataSource = null;
             dataGridViewEmployees.DataSource = employees;
-
-            // Opcional: ajustar ancho de columnas automáticamente
             dataGridViewEmployees.AutoResizeColumns();
         }
+
+
     }
 }
