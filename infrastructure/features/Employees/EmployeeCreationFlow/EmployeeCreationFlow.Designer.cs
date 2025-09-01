@@ -19,7 +19,7 @@
             }
             base.Dispose(disposing);
         }
-       
+
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -212,6 +212,7 @@
             buttonCreate.TabIndex = 3;
             buttonCreate.Text = "Crear";
             buttonCreate.UseVisualStyleBackColor = true;
+            buttonCreate.Click += buttonCreate_Click;
             // 
             // buttonCancel
             // 

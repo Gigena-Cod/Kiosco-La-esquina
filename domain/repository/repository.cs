@@ -36,5 +36,26 @@ namespace Kiosco_La_esquina.domain.repository
 
             return dt;
         }
+
+        public int Execute(string query)
+        {
+            using (OleDbConnection connection = new OleDbConnection(_connectionString))
+            {
+                try
+                {
+                    connection.Open();
+                    using (OleDbCommand cmd = new OleDbCommand(query, connection))
+                    {
+                        return cmd.ExecuteNonQuery(); // devuelve cantidad de filas afectadas
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al ejecutar comando: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return 0;
+                }
+            }
+        }
+
     }
 }

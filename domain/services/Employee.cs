@@ -58,8 +58,45 @@ namespace Kiosco_La_esquina.domain.services
             return employees;
         }
 
-         
+        /// <summary>
+        /// Agrega un nuevo empleado a la base de datos.
+        /// </summary>
+        /// <param name="employee">Objeto <see cref="Employee"/> con los datos del nuevo empleado.</param>
+        /// <returns>True si se insertó correctamente; false en caso de error.</returns>
+        public bool AddEmployee(Employee employee)
+        {
+            try
+            {
+                string query = $@"
+            INSERT INTO Employee (FirstName, LastName, Identifier, Email, Role, Salary, HireDate)
+            VALUES (
+                '{employee.FirstName.Replace("'", "''")}',
+                '{employee.LastName.Replace("'", "''")}',
+                '{employee.Identifier.Replace("'", "''")}',
+                '{employee.Email.Replace("'", "''")}',
+                '{employee.Role.Replace("'", "''")}',
+                {employee.Salary},
+                #{employee.HireDate:MM/dd/yyyy}#)"; // Access usa # para fechas
+
+                int rowsAffected = _repository.Execute(query);
+
+                return rowsAffected > 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "Error al agregar empleado:\n" + ex.Message,
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
+                return false;
+            }
         }
+
+
+
     }
+}
 
 
