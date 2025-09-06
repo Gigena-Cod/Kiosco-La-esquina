@@ -2,6 +2,7 @@
 using Kiosco_La_esquina.domain.repository;
 using Kiosco_La_esquina.domain.services;
 using System.Data;
+using System.Text;
 
 namespace Kiosco_La_esquina.infrastructure.features.Employees.EmployeeVisualisationFlow
 {
@@ -18,7 +19,7 @@ namespace Kiosco_La_esquina.infrastructure.features.Employees.EmployeeVisualisat
             ConfigureDataGridView();
             LoadEmployees();
         }
-         
+
         private void EmployeeVisualisationFlow_Load(object sender, EventArgs e)
         {
 
@@ -101,13 +102,54 @@ namespace Kiosco_La_esquina.infrastructure.features.Employees.EmployeeVisualisat
         private void LoadEmployees()
         {
             EmployeeService service = new EmployeeService();
-            employees = service.GetAllEmployees(); 
+            employees = service.GetAllEmployees();
 
             dataGridViewEmployees.DataSource = null;
             dataGridViewEmployees.DataSource = employees;
             dataGridViewEmployees.AutoResizeColumns();
         }
 
+        private void buttonExportEmployeess_Click(object sender, EventArgs e)
+        {
+            if (employees == null || employees.Count == 0)
+            {
+                MessageBox.Show("No hay empleados para exportar.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
 
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.Title = "Guardar lista de empleados";
+                saveFileDialog.Filter = "Archivos CSV (*.csv)|*.csv|Archivos de texto (*.txt)|*.txt";
+                saveFileDialog.DefaultExt = "csv";
+                saveFileDialog.AddExtension = true;
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        using (StreamWriter writer = new StreamWriter(saveFileDialog.FileName, false, Encoding.UTF8))
+                        {
+                            // Cabecera
+                            writer.WriteLine("Nombre;Apellido;DNI;Email;Cargo;Salario;FechaIngreso");
+
+                            // Filas
+                            foreach (var emp in employees)
+                            {
+                                writer.WriteLine($"{emp.FirstName};{emp.LastName};{emp.Identifier};{emp.Email};{emp.Role};{emp.Salary};{emp.HireDate:dd/MM/yyyy}");
+                            }
+                        }
+
+                        MessageBox.Show("Empleados exportados correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error al guardar el archivo: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+        }
+
+        
     }
 }
