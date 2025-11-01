@@ -29,8 +29,31 @@ namespace Kiosco_La_esquina.infrastructure.features.Employees
             hireDatePicker.ValueChanged += OnFieldChanged;
 
             comboBoxEmpleado.SelectedIndexChanged += comboBoxEmpleado_SelectedIndexChanged;
+            LoadRolesComboBox(roleComboBox);
         }
 
+        private void LoadRolesComboBox(ComboBox combo, string defaultValue = null)
+        {
+            combo.DropDownStyle = ComboBoxStyle.DropDownList;
+
+            // Clear previous items
+            combo.Items.Clear();
+
+            // Add job roles
+            combo.Items.Add("Cajero/a");
+            combo.Items.Add("Atención al cliente");
+            combo.Items.Add("Ambos");
+
+            // Select default value if provided
+            if (!string.IsNullOrEmpty(defaultValue) && combo.Items.Contains(defaultValue))
+            {
+                combo.SelectedItem = defaultValue;
+            }
+            else
+            {
+                combo.SelectedIndex = 0; // Select first item by default
+            }
+        }
 
         private void OnFieldChanged(object sender, EventArgs e)
         {

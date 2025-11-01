@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeUpdateFlow));
             buttonCancel = new Button();
             buttonCreate = new Button();
             groupBox2 = new GroupBox();
@@ -222,15 +223,15 @@
             // 
             title.Location = new Point(12, 9);
             title.Name = "title";
-            title.Size = new Size(454, 39);
+            title.Size = new Size(454, 50);
             title.TabIndex = 5;
-            title.Text = "Use este formulario para registrar nuevos empleados en el sistema. Complete todos los campos obligatorios y presione 'Agregar Empleado' para añadirlos a la lista";
+            title.Text = resources.GetString("title.Text");
             // 
             // comboBoxEmpleado
             // 
             comboBoxEmpleado.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxEmpleado.FormattingEnabled = true;
-            comboBoxEmpleado.Location = new Point(18, 77);
+            comboBoxEmpleado.Location = new Point(18, 82);
             comboBoxEmpleado.Name = "comboBoxEmpleado";
             comboBoxEmpleado.Size = new Size(223, 23);
             comboBoxEmpleado.TabIndex = 11;
@@ -239,7 +240,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(16, 59);
+            label5.Location = new Point(16, 64);
             label5.Name = "label5";
             label5.Size = new Size(60, 15);
             label5.TabIndex = 10;
@@ -258,6 +259,7 @@
             Controls.Add(groupBox1);
             Controls.Add(title);
             Name = "EmployeeUpdateFlow";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Actualizar empleado";
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
