@@ -255,6 +255,7 @@
             modificarEmpleadoToolStripMenuItem.Name = "modificarEmpleadoToolStripMenuItem";
             modificarEmpleadoToolStripMenuItem.Size = new Size(189, 22);
             modificarEmpleadoToolStripMenuItem.Text = "Modificar empleado";
+            modificarEmpleadoToolStripMenuItem.Click += modificarEmpleadoToolStripMenuItem_Click;
             // 
             // eliminarEmpleadoToolStripMenuItem
             // 

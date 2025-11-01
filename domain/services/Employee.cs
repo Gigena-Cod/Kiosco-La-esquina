@@ -142,6 +142,31 @@ namespace Kiosco_La_esquina.domain.services
             }
         }
 
+        public bool UpdateEmployee(Employee employee)
+        {
+            try
+            {
+                string query = $@"
+            UPDATE Employee SET
+                FirstName = '{employee.FirstName.Replace("'", "''")}',
+                LastName = '{employee.LastName.Replace("'", "''")}',
+                Email = '{employee.Email.Replace("'", "''")}',
+                Role = '{employee.Role.Replace("'", "''")}',
+                Salary = {employee.Salary},
+                HireDate = #{employee.HireDate:MM/dd/yyyy}#
+            WHERE Identifier = '{employee.Identifier.Replace("'", "''")}'";
+
+                int rowsAffected = _repository.Execute(query);
+
+                return rowsAffected > 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al actualizar empleado:\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
+
     }
 }
 

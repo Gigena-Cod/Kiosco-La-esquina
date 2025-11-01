@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kiosco-La-esquina")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d8c50aa9ac71823eabdb38951c27f7eb0344d55")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af25f094f087f91597bb28e87cf9163ab42804a8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kiosco-La-esquina")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kiosco-La-esquina")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
