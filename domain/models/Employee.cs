@@ -8,7 +8,9 @@
         public string Email { get; set; }        
         public string Role { get; set; }         
         public decimal Salary { get; set; }      
-        public DateTime HireDate { get; set; }   
+        public DateTime HireDate { get; set; }
+         
+        public string FullName => $"{FirstName} {LastName}";
     }
 }
  

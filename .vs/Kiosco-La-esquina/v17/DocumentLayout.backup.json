@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\employees\\employeevisualisationflow\\employeevisualisationflow.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\employees\\employeevisualisationflow\\employeevisualisationflow.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\employees\\employeedeletionflow\\employeedeletionflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\employees\\employeedeletionflow\\employeedeletionflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\employees\\employeedeletionflow\\employeedeletionflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\employees\\employeedeletionflow\\employeedeletionflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\employees\\employeevisualisationflow\\employeevisualisationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\employees\\employeevisualisationflow\\employeevisualisationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\employees\\employeevisualisationflow\\employeevisualisationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\employees\\employeevisualisationflow\\employeevisualisationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\employees\\employeevisualisationflow\\employeevisualisationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\domain\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:domain\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\employees\\employeevisualisationflow\\employeevisualisationflow.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\employees\\employeevisualisationflow\\employeevisualisationflow.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\employees\\employeecreationflow\\employeecreationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\employees\\employeecreationflow\\employeecreationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\employees\\employeecreationflow\\employeecreationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\domain\\services\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:domain\\services\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,17 +54,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "EmployeeVisualisationFlow.cs",
               "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Employees\\EmployeeVisualisationFlow\\EmployeeVisualisationFlow.cs",
               "RelativeDocumentMoniker": "infrastructure\\features\\Employees\\EmployeeVisualisationFlow\\EmployeeVisualisationFlow.cs",
-              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Employees\\EmployeeVisualisationFlow\\EmployeeVisualisationFlow.cs*",
-              "RelativeToolTip": "infrastructure\\features\\Employees\\EmployeeVisualisationFlow\\EmployeeVisualisationFlow.cs*",
-              "ViewState": "AgIAAG4AAAAAAAAAAADwv58AAAA9AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Employees\\EmployeeVisualisationFlow\\EmployeeVisualisationFlow.cs",
+              "RelativeToolTip": "infrastructure\\features\\Employees\\EmployeeVisualisationFlow\\EmployeeVisualisationFlow.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAYwBkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-31T21:12:36.118Z",
               "IsPinned": true,
@@ -72,32 +72,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "EmployeeVisualisationFlow.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Employees\\EmployeeVisualisationFlow\\EmployeeVisualisationFlow.cs",
               "RelativeDocumentMoniker": "infrastructure\\features\\Employees\\EmployeeVisualisationFlow\\EmployeeVisualisationFlow.cs",
-              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Employees\\EmployeeVisualisationFlow\\EmployeeVisualisationFlow.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "infrastructure\\features\\Employees\\EmployeeVisualisationFlow\\EmployeeVisualisationFlow.cs [Dise\u00F1o]*",
+              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Employees\\EmployeeVisualisationFlow\\EmployeeVisualisationFlow.cs [Dise\u00F1o]",
+              "RelativeToolTip": "infrastructure\\features\\Employees\\EmployeeVisualisationFlow\\EmployeeVisualisationFlow.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T17:01:08.206Z",
+              "WhenOpened": "2025-11-01T23:16:40.588Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EmployeeCreationFlow.cs",
-              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Employees\\EmployeeCreationFlow\\EmployeeCreationFlow.cs",
-              "RelativeDocumentMoniker": "infrastructure\\features\\Employees\\EmployeeCreationFlow\\EmployeeCreationFlow.cs",
-              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Employees\\EmployeeCreationFlow\\EmployeeCreationFlow.cs",
-              "RelativeToolTip": "infrastructure\\features\\Employees\\EmployeeCreationFlow\\EmployeeCreationFlow.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAiwGIAAAAzAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "EmployeeDeletionFlow.cs",
+              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Employees\\EmployeeDeletionFlow\\EmployeeDeletionFlow.cs",
+              "RelativeDocumentMoniker": "infrastructure\\features\\Employees\\EmployeeDeletionFlow\\EmployeeDeletionFlow.cs",
+              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Employees\\EmployeeDeletionFlow\\EmployeeDeletionFlow.cs",
+              "RelativeToolTip": "infrastructure\\features\\Employees\\EmployeeDeletionFlow\\EmployeeDeletionFlow.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAkwBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T02:08:22.732Z",
+              "WhenOpened": "2025-11-01T23:02:49.005Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "EmployeeDeletionFlow.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Employees\\EmployeeDeletionFlow\\EmployeeDeletionFlow.cs",
+              "RelativeDocumentMoniker": "infrastructure\\features\\Employees\\EmployeeDeletionFlow\\EmployeeDeletionFlow.cs",
+              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Employees\\EmployeeDeletionFlow\\EmployeeDeletionFlow.cs [Dise\u00F1o]",
+              "RelativeToolTip": "infrastructure\\features\\Employees\\EmployeeDeletionFlow\\EmployeeDeletionFlow.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T23:02:41.472Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "EmployeeCreationFlow.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Employees\\EmployeeCreationFlow\\EmployeeCreationFlow.cs",
               "RelativeDocumentMoniker": "infrastructure\\features\\Employees\\EmployeeCreationFlow\\EmployeeCreationFlow.cs",
@@ -108,28 +120,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "repository.cs",
-              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\domain\\repository\\repository.cs",
-              "RelativeDocumentMoniker": "domain\\repository\\repository.cs",
-              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\domain\\repository\\repository.cs",
-              "RelativeToolTip": "domain\\repository\\repository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABJAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "EmployeeVisualisationFlow.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Employees\\EmployeeVisualisationFlow\\EmployeeVisualisationFlow.Designer.cs",
+              "RelativeDocumentMoniker": "infrastructure\\features\\Employees\\EmployeeVisualisationFlow\\EmployeeVisualisationFlow.Designer.cs",
+              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Employees\\EmployeeVisualisationFlow\\EmployeeVisualisationFlow.Designer.cs",
+              "RelativeToolTip": "infrastructure\\features\\Employees\\EmployeeVisualisationFlow\\EmployeeVisualisationFlow.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T01:10:17.614Z",
+              "WhenOpened": "2025-09-06T17:00:37.716Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EmployeeVisualisationFlow.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Employees\\EmployeeVisualisationFlow\\EmployeeVisualisationFlow.Designer.cs",
-              "RelativeDocumentMoniker": "infrastructure\\features\\Employees\\EmployeeVisualisationFlow\\EmployeeVisualisationFlow.Designer.cs",
-              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Employees\\EmployeeVisualisationFlow\\EmployeeVisualisationFlow.Designer.cs*",
-              "RelativeToolTip": "infrastructure\\features\\Employees\\EmployeeVisualisationFlow\\EmployeeVisualisationFlow.Designer.cs*",
-              "ViewState": "AgIAADkAAAAAAAAAAAAqwE0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "EmployeeCreationFlow.cs",
+              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Employees\\EmployeeCreationFlow\\EmployeeCreationFlow.cs",
+              "RelativeDocumentMoniker": "infrastructure\\features\\Employees\\EmployeeCreationFlow\\EmployeeCreationFlow.cs",
+              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Employees\\EmployeeCreationFlow\\EmployeeCreationFlow.cs",
+              "RelativeToolTip": "infrastructure\\features\\Employees\\EmployeeCreationFlow\\EmployeeCreationFlow.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAiwGIAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T17:00:37.716Z",
+              "WhenOpened": "2025-09-01T02:08:22.732Z",
               "EditorCaption": ""
             },
             {
@@ -144,18 +156,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-31T16:57:14.711Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\domain\\services\\Employee.cs",
-              "RelativeDocumentMoniker": "domain\\services\\Employee.cs",
-              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\domain\\services\\Employee.cs",
-              "RelativeToolTip": "domain\\services\\Employee.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAUwEUAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T01:26:20.323Z"
             },
             {
               "$type": "Document",

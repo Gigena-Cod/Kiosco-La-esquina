@@ -95,6 +95,52 @@ namespace Kiosco_La_esquina.domain.services
         }
 
 
+        /// <summary>
+        /// Elimina un empleado de la base de datos según su identificador (DNI).
+        /// </summary>
+        /// <param name="identifier">DNI o identificador único del empleado.</param>
+        /// <returns>True si la eliminación fue exitosa; false en caso contrario.</returns>
+        public bool DeleteEmployee(string identifier)
+        {
+            try
+            {
+                // Construir la consulta SQL escapando comillas simples por seguridad
+                string query = $"DELETE FROM Employee WHERE Identifier = '{identifier.Replace("'", "''")}'";
+
+                int rowsAffected = _repository.Execute(query);
+
+                if (rowsAffected > 0)
+                {
+                    MessageBox.Show(
+                        "Empleado eliminado correctamente.",
+                        "Éxito",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information
+                    );
+                    return true;
+                }
+                else
+                {
+                    MessageBox.Show(
+                        "No se encontró un empleado con ese identificador.",
+                        "Atención",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning
+                    );
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "Error al eliminar empleado:\n" + ex.Message,
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
+                return false;
+            }
+        }
 
     }
 }
