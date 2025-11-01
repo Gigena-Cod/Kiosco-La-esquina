@@ -150,6 +150,31 @@ namespace Kiosco_La_esquina.infrastructure.features.Employees.EmployeeVisualisat
             }
         }
 
-        
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            string searchText = textBox1.Text.Trim().ToLower();
+
+            if (string.IsNullOrWhiteSpace(searchText))
+            {
+                // Si no hay texto, mostrar todos los empleados
+                dataGridViewEmployees.DataSource = employees;
+            }
+            else
+            {
+                // Filtrar empleados por coincidencia parcial en Nombre, Apellido, DNI, Email o Cargo
+                var filtered = employees.Where(emp =>
+                    emp.FirstName.ToLower().Contains(searchText) ||
+                    emp.LastName.ToLower().Contains(searchText) ||
+                    emp.Identifier.ToString().Contains(searchText) ||
+                    emp.Email.ToLower().Contains(searchText) ||
+                    emp.Role.ToLower().Contains(searchText)
+                ).ToList();
+
+                dataGridViewEmployees.DataSource = filtered;
+            }
+
+            dataGridViewEmployees.Refresh();
+        }
+
     }
 }
