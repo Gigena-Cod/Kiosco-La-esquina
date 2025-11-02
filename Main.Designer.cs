@@ -205,6 +205,7 @@
             eliminarProveedorToolStripMenuItem.Name = "eliminarProveedorToolStripMenuItem";
             eliminarProveedorToolStripMenuItem.Size = new Size(196, 22);
             eliminarProveedorToolStripMenuItem.Text = "Eliminar proveedor";
+            eliminarProveedorToolStripMenuItem.Click += eliminarProveedorToolStripMenuItem_Click;
             // 
             // reportesToolStripMenuItem
             // 

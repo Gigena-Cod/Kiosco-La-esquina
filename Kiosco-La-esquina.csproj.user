@@ -16,6 +16,9 @@
     <Compile Update="infrastructure\features\Suppliers\SupplierCreationFlow\SupplierCreationFlow.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="infrastructure\features\Suppliers\SupplierDeleteFlow\SupplierDeleteFlow.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="infrastructure\features\Suppliers\SupplierVisualizationFlow\SupplierVisualizationFlow.cs">
       <SubType>Form</SubType>
     </Compile>
