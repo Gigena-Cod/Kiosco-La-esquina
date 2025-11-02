@@ -92,7 +92,7 @@ namespace Kiosco_La_esquina.domain.services
                 string query = $@"
                 UPDATE Supplier SET
                     Name = '{supplier.Name.Replace("'", "''")}',
-                    ContactName = '{supplier.Contact_Name.Replace("'", "''")}',
+                    Contact_Name = '{supplier.Contact_Name.Replace("'", "''")}',
                     Phone = '{supplier.Phone.Replace("'", "''")}',
                     Address = '{supplier.Address.Replace("'", "''")}'
                 WHERE ID = {supplier.ID}";

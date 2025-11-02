@@ -51,6 +51,14 @@ namespace Kiosco_La_esquina.infrastructure.features.Suppliers.SupplierVisualizat
                 Width = 200
             });
 
+            dataGridViewSuppliers.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "Contact_Name",
+                HeaderText = "Contacto",
+                DataPropertyName = "Contact_Name",
+                Width = 150
+            });
+
 
             dataGridViewSuppliers.Columns.Add(new DataGridViewTextBoxColumn
             {

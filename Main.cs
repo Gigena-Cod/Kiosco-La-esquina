@@ -5,6 +5,7 @@ using Kiosco_La_esquina.infrastructure.features.Employees.EmployeeDeletionFlow;
 using Kiosco_La_esquina.infrastructure.features.Employees.EmployeeVisualisationFlow;
 using Kiosco_La_esquina.infrastructure.features.Suppliers.SupplierCreationFlow;
 using Kiosco_La_esquina.infrastructure.features.Suppliers.SupplierDeleteFlow;
+using Kiosco_La_esquina.infrastructure.features.Suppliers.SupplierUpdateFlow;
 using Kiosco_La_esquina.infrastructure.features.Suppliers.SupplierVisualizationFlow;
 
 namespace Kiosco_La_esquina
@@ -76,6 +77,14 @@ namespace Kiosco_La_esquina
             deleteForm.Show();
         }
 
+        private void modificarProveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Instanciar el formulario de eliminación de proveedores
+            SupplierUpdateFlow deleteForm = new SupplierUpdateFlow();
+
+            // Mostrar el formulario
+            deleteForm.Show();
+        }
     }
 }
 
