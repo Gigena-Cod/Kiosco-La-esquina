@@ -185,6 +185,7 @@
             listadoDeProveedoresToolStripMenuItem.Name = "listadoDeProveedoresToolStripMenuItem";
             listadoDeProveedoresToolStripMenuItem.Size = new Size(196, 22);
             listadoDeProveedoresToolStripMenuItem.Text = "Listado de proveedores";
+            listadoDeProveedoresToolStripMenuItem.Click += listadoDeProveedoresToolStripMenuItem_Click;
             // 
             // agregarProveedorToolStripMenuItem
             // 

@@ -40,6 +40,9 @@ namespace Kiosco_La_esquina.infrastructure.features.Employees.EmployeeVisualisat
             // Limpiar columnas anteriores
             dataGridViewEmployees.Columns.Clear();
 
+            dataGridViewEmployees.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+
             // Columnas
             dataGridViewEmployees.Columns.Add(new DataGridViewTextBoxColumn
             {

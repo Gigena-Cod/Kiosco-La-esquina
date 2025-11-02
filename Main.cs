@@ -1,7 +1,9 @@
+using Kiosco_La_esquina.domain.models;
 using Kiosco_La_esquina.infrastructure.features;
 using Kiosco_La_esquina.infrastructure.features.Employees;
 using Kiosco_La_esquina.infrastructure.features.Employees.EmployeeDeletionFlow;
 using Kiosco_La_esquina.infrastructure.features.Employees.EmployeeVisualisationFlow;
+using Kiosco_La_esquina.infrastructure.features.Supplier.SupplierVisualizationFlow;
 
 namespace Kiosco_La_esquina
 {
@@ -43,6 +45,17 @@ namespace Kiosco_La_esquina
 
             employeeForm.Show();
         }
+
+        private void listadoDeProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Instanciar el formulario de visualización de proveedores
+            SupplierVisualizationFlow supplierForm =
+                new SupplierVisualizationFlow();
+
+            // Mostrar el formulario
+            supplierForm.Show();
+        }
+
     }
 }
 
