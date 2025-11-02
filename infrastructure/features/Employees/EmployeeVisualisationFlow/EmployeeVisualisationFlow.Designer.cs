@@ -31,7 +31,7 @@
             label1 = new Label();
             label2 = new Label();
             textBox1 = new TextBox();
-            button1 = new Button();
+            buttonExportEmployeess = new Button();
             dataGridViewEmployees = new DataGridView();
             FirstName = new DataGridViewTextBoxColumn();
             ColumnLastName = new DataGridViewTextBoxColumn();
@@ -66,15 +66,17 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(242, 23);
             textBox1.TabIndex = 2;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
-            // button1
+            // buttonExportEmployeess
             // 
-            button1.Location = new Point(671, 54);
-            button1.Name = "button1";
-            button1.Size = new Size(120, 35);
-            button1.TabIndex = 3;
-            button1.Text = "Exportar";
-            button1.UseVisualStyleBackColor = true;
+            buttonExportEmployeess.Location = new Point(671, 54);
+            buttonExportEmployeess.Name = "buttonExportEmployeess";
+            buttonExportEmployeess.Size = new Size(120, 35);
+            buttonExportEmployeess.TabIndex = 3;
+            buttonExportEmployeess.Text = "Exportar";
+            buttonExportEmployeess.UseVisualStyleBackColor = true;
+            buttonExportEmployeess.Click += buttonExportEmployeess_Click;
             // 
             // dataGridViewEmployees
             // 
@@ -131,7 +133,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(803, 450);
             Controls.Add(dataGridViewEmployees);
-            Controls.Add(button1);
+            Controls.Add(buttonExportEmployeess);
             Controls.Add(textBox1);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -150,7 +152,7 @@
         private Label label1;
         private Label label2;
         private TextBox textBox1;
-        private Button button1;
+        private Button buttonExportEmployeess;
         private DataGridView dataGridViewEmployees;
         private DataGridViewTextBoxColumn FirstName;
         private DataGridViewTextBoxColumn ColumnLastName;

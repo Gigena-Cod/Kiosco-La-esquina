@@ -7,13 +7,25 @@
     <Compile Update="infrastructure\features\Employees\EmployeeDeletionFlow\EmployeeDeletionFlow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="infrastructure\features\Employees\EmployeeModificationFlow\EmployeeModificationFlow.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="infrastructure\features\Employees\EmployeeUpdateFlow\EmployeeUpdateFlow.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="infrastructure\features\Employees\EmployeeVisualisationFlow\EmployeeVisualisationFlow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="infrastructure\features\Products\ProductVisualizationFlow\ProductVisualizationFlow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="infrastructure\features\Suppliers\SupplierCreationFlow\SupplierCreationFlow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="infrastructure\features\Suppliers\SupplierDeleteFlow\SupplierDeleteFlow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="infrastructure\features\Suppliers\SupplierUpdateFlow\SupplierUpdateFlow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="infrastructure\features\Suppliers\SupplierVisualizationFlow\SupplierVisualizationFlow.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Main.cs">

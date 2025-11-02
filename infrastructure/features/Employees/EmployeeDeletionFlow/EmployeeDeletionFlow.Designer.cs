@@ -33,13 +33,13 @@
             comboBoxEmpleado = new ComboBox();
             groupBox1 = new GroupBox();
             label5 = new Label();
-            textBox3 = new TextBox();
+            emailTextBox = new TextBox();
             label6 = new Label();
-            textBox4 = new TextBox();
+            identifierTextBox = new TextBox();
             label4 = new Label();
-            textBox2 = new TextBox();
+            lastNameTextBox = new TextBox();
             label3 = new Label();
-            textBox1 = new TextBox();
+            firstNameTextBox = new TextBox();
             buttonEliminar = new Button();
             buttonCancelar = new Button();
             groupBox1.SuspendLayout();
@@ -70,17 +70,18 @@
             comboBoxEmpleado.Name = "comboBoxEmpleado";
             comboBoxEmpleado.Size = new Size(223, 23);
             comboBoxEmpleado.TabIndex = 2;
+            comboBoxEmpleado.SelectedIndexChanged += comboBoxEmpleado_SelectedIndexChanged;
             // 
             // groupBox1
             // 
             groupBox1.Controls.Add(label5);
-            groupBox1.Controls.Add(textBox3);
+            groupBox1.Controls.Add(emailTextBox);
             groupBox1.Controls.Add(label6);
-            groupBox1.Controls.Add(textBox4);
+            groupBox1.Controls.Add(identifierTextBox);
             groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(textBox2);
+            groupBox1.Controls.Add(lastNameTextBox);
             groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(firstNameTextBox);
             groupBox1.Location = new Point(10, 123);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(460, 145);
@@ -97,13 +98,13 @@
             label5.TabIndex = 10;
             label5.Text = "Email";
             // 
-            // textBox3
+            // emailTextBox
             // 
-            textBox3.Location = new Point(235, 103);
-            textBox3.Name = "textBox3";
-            textBox3.ReadOnly = true;
-            textBox3.Size = new Size(219, 23);
-            textBox3.TabIndex = 9;
+            emailTextBox.Location = new Point(235, 103);
+            emailTextBox.Name = "emailTextBox";
+            emailTextBox.ReadOnly = true;
+            emailTextBox.Size = new Size(219, 23);
+            emailTextBox.TabIndex = 9;
             // 
             // label6
             // 
@@ -114,13 +115,13 @@
             label6.TabIndex = 8;
             label6.Text = "Dni";
             // 
-            // textBox4
+            // identifierTextBox
             // 
-            textBox4.Location = new Point(6, 103);
-            textBox4.Name = "textBox4";
-            textBox4.ReadOnly = true;
-            textBox4.Size = new Size(219, 23);
-            textBox4.TabIndex = 7;
+            identifierTextBox.Location = new Point(6, 103);
+            identifierTextBox.Name = "identifierTextBox";
+            identifierTextBox.ReadOnly = true;
+            identifierTextBox.Size = new Size(219, 23);
+            identifierTextBox.TabIndex = 7;
             // 
             // label4
             // 
@@ -131,13 +132,13 @@
             label4.TabIndex = 6;
             label4.Text = "Apellido";
             // 
-            // textBox2
+            // lastNameTextBox
             // 
-            textBox2.Location = new Point(235, 45);
-            textBox2.Name = "textBox2";
-            textBox2.ReadOnly = true;
-            textBox2.Size = new Size(219, 23);
-            textBox2.TabIndex = 5;
+            lastNameTextBox.Location = new Point(235, 45);
+            lastNameTextBox.Name = "lastNameTextBox";
+            lastNameTextBox.ReadOnly = true;
+            lastNameTextBox.Size = new Size(219, 23);
+            lastNameTextBox.TabIndex = 5;
             // 
             // label3
             // 
@@ -148,13 +149,13 @@
             label3.TabIndex = 4;
             label3.Text = "Nombre";
             // 
-            // textBox1
+            // firstNameTextBox
             // 
-            textBox1.Location = new Point(6, 45);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(219, 23);
-            textBox1.TabIndex = 0;
+            firstNameTextBox.Location = new Point(6, 45);
+            firstNameTextBox.Name = "firstNameTextBox";
+            firstNameTextBox.ReadOnly = true;
+            firstNameTextBox.Size = new Size(219, 23);
+            firstNameTextBox.TabIndex = 0;
             // 
             // buttonEliminar
             // 
@@ -164,6 +165,7 @@
             buttonEliminar.TabIndex = 5;
             buttonEliminar.Text = "Eliminar";
             buttonEliminar.UseVisualStyleBackColor = true;
+            buttonEliminar.Click += buttonEliminar_Click;
             // 
             // buttonCancelar
             // 
@@ -203,13 +205,13 @@
         private ComboBox comboBoxEmpleado;
         private GroupBox groupBox1;
         private Label label5;
-        private TextBox textBox3;
+        private TextBox emailTextBox;
         private Label label6;
-        private TextBox textBox4;
+        private TextBox identifierTextBox;
         private Label label4;
-        private TextBox textBox2;
+        private TextBox lastNameTextBox;
         private Label label3;
-        private TextBox textBox1;
+        private TextBox firstNameTextBox;
         private Button buttonEliminar;
         private Button buttonCancelar;
     }
