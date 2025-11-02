@@ -124,6 +124,7 @@
             agregarProductoToolStripMenuItem.Name = "agregarProductoToolStripMenuItem";
             agregarProductoToolStripMenuItem.Size = new Size(206, 22);
             agregarProductoToolStripMenuItem.Text = "Agregar producto";
+            agregarProductoToolStripMenuItem.Click += agregarProductoToolStripMenuItem_Click;
             // 
             // modificarProductoToolStripMenuItem
             // 
@@ -153,25 +154,25 @@
             // listadoDeClientesToolStripMenuItem
             // 
             listadoDeClientesToolStripMenuItem.Name = "listadoDeClientesToolStripMenuItem";
-            listadoDeClientesToolStripMenuItem.Size = new Size(180, 22);
+            listadoDeClientesToolStripMenuItem.Size = new Size(171, 22);
             listadoDeClientesToolStripMenuItem.Text = "Listado de clientes";
             // 
             // agregarClienteToolStripMenuItem
             // 
             agregarClienteToolStripMenuItem.Name = "agregarClienteToolStripMenuItem";
-            agregarClienteToolStripMenuItem.Size = new Size(180, 22);
+            agregarClienteToolStripMenuItem.Size = new Size(171, 22);
             agregarClienteToolStripMenuItem.Text = "Agregar cliente";
             // 
             // modificarClienteToolStripMenuItem
             // 
             modificarClienteToolStripMenuItem.Name = "modificarClienteToolStripMenuItem";
-            modificarClienteToolStripMenuItem.Size = new Size(180, 22);
+            modificarClienteToolStripMenuItem.Size = new Size(171, 22);
             modificarClienteToolStripMenuItem.Text = "Modificar cliente";
             // 
             // eliminarClienteToolStripMenuItem
             // 
             eliminarClienteToolStripMenuItem.Name = "eliminarClienteToolStripMenuItem";
-            eliminarClienteToolStripMenuItem.Size = new Size(180, 22);
+            eliminarClienteToolStripMenuItem.Size = new Size(171, 22);
             eliminarClienteToolStripMenuItem.Text = "Eliminar cliente";
             // 
             // proveedoresToolStripMenuItem

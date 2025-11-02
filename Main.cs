@@ -3,6 +3,7 @@ using Kiosco_La_esquina.infrastructure.features;
 using Kiosco_La_esquina.infrastructure.features.Employees;
 using Kiosco_La_esquina.infrastructure.features.Employees.EmployeeDeletionFlow;
 using Kiosco_La_esquina.infrastructure.features.Employees.EmployeeVisualisationFlow;
+using Kiosco_La_esquina.infrastructure.features.Products.ProductCreationFlow;
 using Kiosco_La_esquina.infrastructure.features.Products.ProductVisualizationFlow;
 using Kiosco_La_esquina.infrastructure.features.Suppliers.SupplierCreationFlow;
 using Kiosco_La_esquina.infrastructure.features.Suppliers.SupplierDeleteFlow;
@@ -90,6 +91,12 @@ namespace Kiosco_La_esquina
         private void listadoDeProductosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ProductVisualizationFlow productForm = new ProductVisualizationFlow();
+            productForm.Show();
+        }
+
+        private void agregarProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProductCreationFlow productForm = new ProductCreationFlow();
             productForm.Show();
         }
     }
