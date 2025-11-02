@@ -11,8 +11,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="infrastructure\features\Supplier\SupplierDeleteFlow\" />
-    <Folder Include="infrastructure\features\Supplier\SupplierUpdateFlow\" />
+    <Folder Include="infrastructure\features\Suppliers\SupplierDeleteFlow\" />
+    <Folder Include="infrastructure\features\Suppliers\SupplierUpdateFlow\" />
     <Folder Include="infrastructure\helpers\" />
   </ItemGroup>
 

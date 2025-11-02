@@ -54,12 +54,12 @@ namespace Kiosco_La_esquina.domain.services
         /// <summary>
         /// Agrega un nuevo proveedor a la base de datos.
         /// </summary>
-        public bool AddSupplier(Supplier supplier)
+        public bool CreateSupplier(Supplier supplier)
         {
             try
             {
                 string query = $@"
-                INSERT INTO Supplier (Name, ContactName, Phone, Address)
+                INSERT INTO Supplier (Name, Contact_Name, Phone, Address)
                 VALUES (
                     '{supplier.Name.Replace("'", "''")}',
                     '{supplier.Contact_Name.Replace("'", "''")}',

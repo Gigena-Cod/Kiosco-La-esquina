@@ -1,4 +1,4 @@
-﻿namespace Kiosco_La_esquina.infrastructure.features.Supplier.SupplierCreationFlow
+﻿namespace Kiosco_La_esquina.infrastructure.features.Suppliers.SupplierCreationFlow
 {
     partial class SupplierCreationFlow
     {
@@ -31,14 +31,14 @@
             buttonCancel = new Button();
             buttonCreate = new Button();
             groupBox1 = new GroupBox();
+            contactNameLabel = new Label();
             label4 = new Label();
-            phoneTextBox = new Label();
-            contactNameTextBox = new Label();
-            nameTextBox = new Label();
-            textBoxEmail = new TextBox();
-            textBoxIdentifier = new TextBox();
-            textBoxLastName = new TextBox();
-            textBoxName = new TextBox();
+            phoneLabel = new Label();
+            nameLabel = new Label();
+            addressTextBox = new TextBox();
+            phoneTextBox = new TextBox();
+            contactNameTextBox = new TextBox();
+            firstNameTextBox = new TextBox();
             title = new Label();
             groupBox1.SuspendLayout();
             SuspendLayout();
@@ -64,20 +64,29 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(contactNameLabel);
             groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(phoneLabel);
+            groupBox1.Controls.Add(nameLabel);
+            groupBox1.Controls.Add(addressTextBox);
             groupBox1.Controls.Add(phoneTextBox);
             groupBox1.Controls.Add(contactNameTextBox);
-            groupBox1.Controls.Add(nameTextBox);
-            groupBox1.Controls.Add(textBoxEmail);
-            groupBox1.Controls.Add(textBoxIdentifier);
-            groupBox1.Controls.Add(textBoxLastName);
-            groupBox1.Controls.Add(textBoxName);
+            groupBox1.Controls.Add(firstNameTextBox);
             groupBox1.Location = new Point(12, 61);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(447, 136);
             groupBox1.TabIndex = 6;
             groupBox1.TabStop = false;
             groupBox1.Text = "Datos personales";
+            // 
+            // contactNameLabel
+            // 
+            contactNameLabel.AutoSize = true;
+            contactNameLabel.Location = new Point(230, 19);
+            contactNameLabel.Name = "contactNameLabel";
+            contactNameLabel.Size = new Size(117, 15);
+            contactNameLabel.TabIndex = 8;
+            contactNameLabel.Text = "Nombre de contacto";
             // 
             // label4
             // 
@@ -88,60 +97,51 @@
             label4.TabIndex = 7;
             label4.Text = "Direccion";
             // 
+            // phoneLabel
+            // 
+            phoneLabel.AutoSize = true;
+            phoneLabel.Location = new Point(6, 74);
+            phoneLabel.Name = "phoneLabel";
+            phoneLabel.Size = new Size(53, 15);
+            phoneLabel.TabIndex = 6;
+            phoneLabel.Text = "Telefono";
+            // 
+            // nameLabel
+            // 
+            nameLabel.AutoSize = true;
+            nameLabel.Location = new Point(6, 24);
+            nameLabel.Name = "nameLabel";
+            nameLabel.Size = new Size(51, 15);
+            nameLabel.TabIndex = 4;
+            nameLabel.Text = "Nombre";
+            // 
+            // addressTextBox
+            // 
+            addressTextBox.Location = new Point(230, 92);
+            addressTextBox.Name = "addressTextBox";
+            addressTextBox.Size = new Size(211, 23);
+            addressTextBox.TabIndex = 3;
+            // 
             // phoneTextBox
             // 
-            phoneTextBox.AutoSize = true;
-            phoneTextBox.Location = new Point(6, 74);
+            phoneTextBox.Location = new Point(6, 92);
             phoneTextBox.Name = "phoneTextBox";
-            phoneTextBox.Size = new Size(53, 15);
-            phoneTextBox.TabIndex = 6;
-            phoneTextBox.Text = "Telefono";
+            phoneTextBox.Size = new Size(211, 23);
+            phoneTextBox.TabIndex = 2;
             // 
             // contactNameTextBox
             // 
-            contactNameTextBox.AutoSize = true;
-            contactNameTextBox.Location = new Point(230, 24);
+            contactNameTextBox.Location = new Point(230, 42);
             contactNameTextBox.Name = "contactNameTextBox";
-            contactNameTextBox.Size = new Size(117, 15);
-            contactNameTextBox.TabIndex = 5;
-            contactNameTextBox.Text = "Nombre de contacto";
+            contactNameTextBox.Size = new Size(211, 23);
+            contactNameTextBox.TabIndex = 1;
             // 
-            // nameTextBox
+            // firstNameTextBox
             // 
-            nameTextBox.AutoSize = true;
-            nameTextBox.Location = new Point(6, 24);
-            nameTextBox.Name = "nameTextBox";
-            nameTextBox.Size = new Size(51, 15);
-            nameTextBox.TabIndex = 4;
-            nameTextBox.Text = "Nombre";
-            // 
-            // textBoxEmail
-            // 
-            textBoxEmail.Location = new Point(230, 92);
-            textBoxEmail.Name = "textBoxEmail";
-            textBoxEmail.Size = new Size(211, 23);
-            textBoxEmail.TabIndex = 3;
-            // 
-            // textBoxIdentifier
-            // 
-            textBoxIdentifier.Location = new Point(6, 92);
-            textBoxIdentifier.Name = "textBoxIdentifier";
-            textBoxIdentifier.Size = new Size(211, 23);
-            textBoxIdentifier.TabIndex = 2;
-            // 
-            // textBoxLastName
-            // 
-            textBoxLastName.Location = new Point(230, 42);
-            textBoxLastName.Name = "textBoxLastName";
-            textBoxLastName.Size = new Size(211, 23);
-            textBoxLastName.TabIndex = 1;
-            // 
-            // textBoxName
-            // 
-            textBoxName.Location = new Point(6, 42);
-            textBoxName.Name = "textBoxName";
-            textBoxName.Size = new Size(211, 23);
-            textBoxName.TabIndex = 0;
+            firstNameTextBox.Location = new Point(6, 42);
+            firstNameTextBox.Name = "firstNameTextBox";
+            firstNameTextBox.Size = new Size(211, 23);
+            firstNameTextBox.TabIndex = 0;
             // 
             // title
             // 
@@ -161,6 +161,7 @@
             Controls.Add(groupBox1);
             Controls.Add(title);
             Name = "SupplierCreationFlow";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "SupplierCreationFlow";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
@@ -171,15 +172,16 @@
 
         private Button buttonCancel;
         private Button buttonCreate;
-        private GroupBox groupBox1;
-        private Label label4;
-        private Label phoneTextBox;
-        private Label contactNameTextBox;
-        private Label nameTextBox;
-        private TextBox textBoxEmail;
-        private TextBox textBoxIdentifier;
-        private TextBox textBoxLastName;
-        private TextBox textBoxName;
+        private GroupBox groupBox1; 
+        private Label nameLabel;
+        private TextBox addressTextBox;
+        private TextBox phoneTextBox;
+        private TextBox textBoxfirstNameTextBoxLastName;
+        private TextBox firstNameTextBox;
         private Label title;
+        private Label label4;
+        private Label phoneLabel;
+        private TextBox contactNameTextBox;
+        private Label contactNameLabel;
     }
 }

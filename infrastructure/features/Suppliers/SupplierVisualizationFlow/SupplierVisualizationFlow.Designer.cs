@@ -1,4 +1,4 @@
-﻿namespace Kiosco_La_esquina.infrastructure.features.Supplier.SupplierVisualizationFlow
+﻿namespace Kiosco_La_esquina.infrastructure.features.Suppliers.SupplierVisualizationFlow
 {
     partial class SupplierVisualizationFlow
     {
@@ -100,6 +100,7 @@
             buttonExportSupplier.TabIndex = 8;
             buttonExportSupplier.Text = "Exportar";
             buttonExportSupplier.UseVisualStyleBackColor = true;
+            buttonExportSupplier.Click += buttonExportSupplier_Click;
             // 
             // searchTextBox
             // 

@@ -1,6 +1,6 @@
 ﻿using Kiosco_La_esquina.domain.services; 
 
-namespace Kiosco_La_esquina.infrastructure.features.Supplier.SupplierVisualizationFlow
+namespace Kiosco_La_esquina.infrastructure.features.Suppliers.SupplierVisualizationFlow
 {
     public partial class SupplierVisualizationFlow : Form
     {
@@ -50,7 +50,7 @@ namespace Kiosco_La_esquina.infrastructure.features.Supplier.SupplierVisualizati
                 DataPropertyName = "Name",
                 Width = 200
             });
-           
+
 
             dataGridViewSuppliers.Columns.Add(new DataGridViewTextBoxColumn
             {
@@ -88,6 +88,11 @@ namespace Kiosco_La_esquina.infrastructure.features.Supplier.SupplierVisualizati
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonExportSupplier_Click(object sender, EventArgs e)
         {
 
         }

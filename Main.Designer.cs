@@ -192,6 +192,7 @@
             agregarProveedorToolStripMenuItem.Name = "agregarProveedorToolStripMenuItem";
             agregarProveedorToolStripMenuItem.Size = new Size(196, 22);
             agregarProveedorToolStripMenuItem.Text = "Agregar proveedor";
+            agregarProveedorToolStripMenuItem.Click += agregarProveedorToolStripMenuItem_Click;
             // 
             // modificarProveedorToolStripMenuItem
             // 

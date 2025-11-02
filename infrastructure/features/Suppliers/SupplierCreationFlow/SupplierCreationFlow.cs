@@ -4,7 +4,7 @@ using System.Windows.Forms;
 using Kiosco_La_esquina.domain.models;
 using Kiosco_La_esquina.domain.services;
 
-namespace Kiosco_La_esquina.infrastructure.features.Supplier.SupplierCreationFlow
+namespace Kiosco_La_esquina.infrastructure.features.Suppliers.SupplierCreationFlow
 {
     public partial class SupplierCreationFlow : Form
     {
@@ -19,20 +19,20 @@ namespace Kiosco_La_esquina.infrastructure.features.Supplier.SupplierCreationFlo
         private void buttonCreate_Click(object sender, EventArgs e)
         {
             // Validar campos obligatorios
-            if (string.IsNullOrWhiteSpace(textBoxName.Text))
+            if (string.IsNullOrWhiteSpace(firstNameTextBox.Text))
             {
                 MessageBox.Show("El nombre del proveedor es obligatorio.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                textBoxName.Focus();
+                firstNameTextBox.Focus();
                 return;            
             }            
 
             // Crear objeto Supplier
             Supplier newSupplier = new Supplier
             {
-                Name = textBoxName.Text.Trim(),
-                Cuit = textBoxCuit.Text.Trim(),
-                Address = textBoxAddress.Text.Trim(),
-                Phone = textBoxPhone.Text.Trim()
+                Name = firstNameTextBox.Text.Trim(),
+                Contact_Name = contactNameTextBox.Text.Trim(),
+                Address = addressTextBox.Text.Trim(),
+                Phone = phoneTextBox.Text.Trim()
             };
 
             // Guardar en la base de datos a través del servicio

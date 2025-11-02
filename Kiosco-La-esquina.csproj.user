@@ -13,10 +13,10 @@
     <Compile Update="infrastructure\features\Employees\EmployeeVisualisationFlow\EmployeeVisualisationFlow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="infrastructure\features\Supplier\SupplierCreationFlow\SupplierCreationFlow.cs">
+    <Compile Update="infrastructure\features\Suppliers\SupplierCreationFlow\SupplierCreationFlow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="infrastructure\features\Supplier\SupplierVisualizationFlow\SupplierVisualizationFlow.cs">
+    <Compile Update="infrastructure\features\Suppliers\SupplierVisualizationFlow\SupplierVisualizationFlow.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Main.cs">

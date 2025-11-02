@@ -51,4 +51,5 @@ C:\Users\Nahuel Gigena\Documents\GitHub\Kiosco-La-esquina\bin\Debug\net8.0-windo
 C:\Users\Nahuel Gigena\Documents\GitHub\Kiosco-La-esquina\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
 C:\Users\Nahuel Gigena\Documents\GitHub\Kiosco-La-esquina\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.PerformanceCounter.dll
 C:\Users\Nahuel Gigena\Documents\GitHub\Kiosco-La-esquina\obj\Debug\net8.0-windows\Kiosco-L.878B609D.Up2Date
-C:\Users\Nahuel Gigena\Documents\GitHub\Kiosco-La-esquina\obj\Debug\net8.0-windows\Kiosco_La_esquina.infrastructure.features.Supplier.SupplierVisualizationFlow.SupplierVisualizationFlow.resources
+C:\Users\Nahuel Gigena\Documents\GitHub\Kiosco-La-esquina\obj\Debug\net8.0-windows\Kiosco_La_esquina.infrastructure.features.Suppliers.SupplierCreationFlow.SupplierCreationFlow.resources
+C:\Users\Nahuel Gigena\Documents\GitHub\Kiosco-La-esquina\obj\Debug\net8.0-windows\Kiosco_La_esquina.infrastructure.features.Suppliers.SupplierVisualizationFlow.SupplierVisualizationFlow.resources
