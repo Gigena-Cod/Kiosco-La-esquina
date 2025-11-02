@@ -11,6 +11,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="infrastructure\features\Products\ProductCreationFlow\" />
+    <Folder Include="infrastructure\features\Products\ProductUpdateFlow\" />
+    <Folder Include="infrastructure\features\Products\ProductDeleteFlow\" />
     <Folder Include="infrastructure\helpers\" />
   </ItemGroup>
 
