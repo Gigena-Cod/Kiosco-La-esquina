@@ -33,7 +33,7 @@
             label7 = new Label();
             comboBoxEmployee = new ComboBox();
             dateTimePickerTo = new DateTimePicker();
-            button4 = new Button();
+            buttonClear = new Button();
             buttonFilter = new Button();
             label6 = new Label();
             label5 = new Label();
@@ -43,7 +43,7 @@
             saleDate = new DataGridViewTextBoxColumn();
             EmployeeName = new DataGridViewTextBoxColumn();
             saleTotal = new DataGridViewTextBoxColumn();
-            searchTextBox = new TextBox();
+            saleIdTextBox = new TextBox();
             label2 = new Label();
             label1 = new Label();
             groupBox2 = new GroupBox();
@@ -66,13 +66,13 @@
             groupBox1.Controls.Add(label7);
             groupBox1.Controls.Add(comboBoxEmployee);
             groupBox1.Controls.Add(dateTimePickerTo);
-            groupBox1.Controls.Add(button4);
+            groupBox1.Controls.Add(buttonClear);
             groupBox1.Controls.Add(buttonFilter);
             groupBox1.Controls.Add(label6);
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(dateTimePickerFrom);
             groupBox1.Controls.Add(dataGridViewSales);
-            groupBox1.Controls.Add(searchTextBox);
+            groupBox1.Controls.Add(saleIdTextBox);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
             groupBox1.Location = new Point(12, 89);
@@ -106,14 +106,15 @@
             dateTimePickerTo.Size = new Size(107, 23);
             dateTimePickerTo.TabIndex = 21;
             // 
-            // button4
+            // buttonClear
             // 
-            button4.Location = new Point(721, 83);
-            button4.Name = "button4";
-            button4.Size = new Size(108, 35);
-            button4.TabIndex = 20;
-            button4.Text = "Limpiar ";
-            button4.UseVisualStyleBackColor = true;
+            buttonClear.Location = new Point(721, 83);
+            buttonClear.Name = "buttonClear";
+            buttonClear.Size = new Size(108, 35);
+            buttonClear.TabIndex = 20;
+            buttonClear.Text = "Limpiar ";
+            buttonClear.UseVisualStyleBackColor = true;
+            buttonClear.Click += buttonClear_Click;
             // 
             // buttonFilter
             // 
@@ -179,12 +180,13 @@
             saleTotal.HeaderText = "Total";
             saleTotal.Name = "saleTotal";
             // 
-            // searchTextBox
+            // saleIdTextBox
             // 
-            searchTextBox.Location = new Point(8, 93);
-            searchTextBox.Name = "searchTextBox";
-            searchTextBox.Size = new Size(107, 23);
-            searchTextBox.TabIndex = 12;
+            saleIdTextBox.Location = new Point(8, 93);
+            saleIdTextBox.Name = "saleIdTextBox";
+            saleIdTextBox.Size = new Size(107, 23);
+            saleIdTextBox.TabIndex = 12;
+            saleIdTextBox.TextChanged += saleIdTextBox_TextChanged;
             // 
             // label2
             // 
@@ -304,11 +306,11 @@
         private Label label5;
         private DateTimePicker dateTimePickerFrom;
         private DateTimePicker dateTimePickerTo;
-        private Button button4;
+        private Button buttonClear;
         private Button buttonFilter;
         private Label label7;
         private ComboBox comboBoxEmployee;
-        private TextBox searchTextBox;
+        private TextBox saleIdTextBox;
         private DataGridViewTextBoxColumn productName;
         private DataGridViewTextBoxColumn productQuantity;
         private DataGridViewTextBoxColumn productPrice;
