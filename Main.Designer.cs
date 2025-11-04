@@ -138,6 +138,7 @@
             eliminarProductoToolStripMenuItem.Name = "eliminarProductoToolStripMenuItem";
             eliminarProductoToolStripMenuItem.Size = new Size(206, 22);
             eliminarProductoToolStripMenuItem.Text = "Eliminar producto";
+            eliminarProductoToolStripMenuItem.Click += eliminarProductoToolStripMenuItem_Click;
             // 
             // controlDeStockMínimoToolStripMenuItem
             // 

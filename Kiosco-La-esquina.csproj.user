@@ -16,6 +16,9 @@
     <Compile Update="infrastructure\features\Products\ProductCreationFlow\ProductCreationFlow.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="infrastructure\features\Products\ProductDeleteFlow\ProductDeleteFlow.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="infrastructure\features\Products\ProductUpdateFlow\ProductUpdateFlow.cs">
       <SubType>Form</SubType>
     </Compile>

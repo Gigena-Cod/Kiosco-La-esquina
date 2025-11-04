@@ -129,24 +129,11 @@ namespace Kiosco_La_esquina.domain.services
 
                 if (rowsAffected > 0)
                 {
-                    MessageBox.Show(
-                        "Producto eliminado correctamente.",
-                        "Éxito",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Information
-                    );
-                    return true;
+                   return true;
                 }
-                else
-                {
-                    MessageBox.Show(
-                        "No se encontró un producto con ese ID.",
-                        "Atención",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Warning
-                    );
-                    return false;
-                }
+               
+                return false;
+                
             }
             catch (Exception ex)
             {
