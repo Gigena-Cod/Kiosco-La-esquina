@@ -175,7 +175,7 @@
             label1.Name = "label1";
             label1.Size = new Size(458, 36);
             label1.TabIndex = 7;
-            label1.Text = "Seleccione el empleado que desea eliminar del sistema. Esta acción no se puede deshacer. Confirme antes de proceder";
+            label1.Text = "Seleccione el proveedor que desea eliminar del sistema. Esta acción no se puede deshacer. Confirme antes de proceder";
             // 
             // SupplierDeleteFlow
             // 
@@ -190,7 +190,7 @@
             Controls.Add(label1);
             Name = "SupplierDeleteFlow";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "SupplierDeleteFlow";
+            Text = "Eliminar proveedor";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);

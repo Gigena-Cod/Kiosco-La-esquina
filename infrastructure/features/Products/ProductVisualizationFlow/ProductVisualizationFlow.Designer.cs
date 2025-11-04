@@ -107,6 +107,7 @@
             searchTextBox.Name = "searchTextBox";
             searchTextBox.Size = new Size(242, 23);
             searchTextBox.TabIndex = 12;
+            searchTextBox.TextChanged += searchTextBox_TextChanged;
             // 
             // label2
             // 
@@ -123,8 +124,8 @@
             label1.Name = "label1";
             label1.Size = new Size(745, 39);
             label1.TabIndex = 10;
-            label1.Text = "Lista de proveedores registrados. Use los filtros o la búsqueda para encontrar un proveedor rápidamente";
-           //
+            label1.Text = "Use este formulario para consultar los productos existentes en el sistema.\nUtilice el campo de búsqueda para filtrar por nombre o descripción, o presione ‘Exportar’ para guardar la lista actual";
+            // 
             // ProductVisualizationFlow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -137,7 +138,7 @@
             Controls.Add(label1);
             Name = "ProductVisualizationFlow";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "ProductVisualizationFlow";
+            Text = "Listado de productos registrados";
             Load += ProductVisualizationFlow_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridViewProducts).EndInit();
             ResumeLayout(false);

@@ -120,5 +120,6 @@ namespace Kiosco_La_esquina.infrastructure.features.Products.ProductVisualizatio
         {
             Close();
         }
+       
     }
 }

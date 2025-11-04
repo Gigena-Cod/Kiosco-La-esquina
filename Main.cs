@@ -3,7 +3,11 @@ using Kiosco_La_esquina.infrastructure.features;
 using Kiosco_La_esquina.infrastructure.features.Employees;
 using Kiosco_La_esquina.infrastructure.features.Employees.EmployeeDeletionFlow;
 using Kiosco_La_esquina.infrastructure.features.Employees.EmployeeVisualisationFlow;
+using Kiosco_La_esquina.infrastructure.features.Products.ProductCreationFlow;
+using Kiosco_La_esquina.infrastructure.features.Products.ProductDeleteFlow;
+using Kiosco_La_esquina.infrastructure.features.Products.ProductUpdateFlow;
 using Kiosco_La_esquina.infrastructure.features.Products.ProductVisualizationFlow;
+using Kiosco_La_esquina.infrastructure.features.Sales.SalesVisualizationFlow;
 using Kiosco_La_esquina.infrastructure.features.Suppliers.SupplierCreationFlow;
 using Kiosco_La_esquina.infrastructure.features.Suppliers.SupplierDeleteFlow;
 using Kiosco_La_esquina.infrastructure.features.Suppliers.SupplierUpdateFlow;
@@ -91,6 +95,30 @@ namespace Kiosco_La_esquina
         {
             ProductVisualizationFlow productForm = new ProductVisualizationFlow();
             productForm.Show();
+        }
+
+        private void agregarProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProductCreationFlow productForm = new ProductCreationFlow();
+            productForm.Show();
+        }
+
+        private void modificarProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProductUpdateFlow productForm = new ProductUpdateFlow();
+            productForm.Show();
+        }
+
+        private void eliminarProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProductDeleteFlow productForm = new ProductDeleteFlow();
+            productForm.Show();
+        }
+
+        private void listadoDeVentasDelDíaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SalesVisualizationFlow saleForm = new SalesVisualizationFlow();
+            saleForm.Show();
         }
     }
 }
