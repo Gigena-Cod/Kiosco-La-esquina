@@ -34,7 +34,6 @@
             comboBoxEmployee = new ComboBox();
             dateTimePickerTo = new DateTimePicker();
             buttonClear = new Button();
-            buttonFilter = new Button();
             label6 = new Label();
             label5 = new Label();
             dateTimePickerFrom = new DateTimePicker();
@@ -67,7 +66,6 @@
             groupBox1.Controls.Add(comboBoxEmployee);
             groupBox1.Controls.Add(dateTimePickerTo);
             groupBox1.Controls.Add(buttonClear);
-            groupBox1.Controls.Add(buttonFilter);
             groupBox1.Controls.Add(label6);
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(dateTimePickerFrom);
@@ -115,16 +113,6 @@
             buttonClear.Text = "Limpiar ";
             buttonClear.UseVisualStyleBackColor = true;
             buttonClear.Click += buttonClear_Click;
-            // 
-            // buttonFilter
-            // 
-            buttonFilter.Location = new Point(607, 83);
-            buttonFilter.Name = "buttonFilter";
-            buttonFilter.Size = new Size(108, 35);
-            buttonFilter.TabIndex = 17;
-            buttonFilter.Text = "Buscar";
-            buttonFilter.UseVisualStyleBackColor = true;
-            buttonFilter.Click += buttonFilter_Click;
             // 
             // label6
             // 
@@ -257,13 +245,13 @@
             // 
             label3.Location = new Point(20, 12);
             label3.Name = "label3";
-            label3.Size = new Size(731, 61);
+            label3.Size = new Size(1033, 61);
             label3.TabIndex = 15;
             label3.Text = resources.GetString("label3.Text");
             // 
             // button1
             // 
-            button1.Location = new Point(812, 12);
+            button1.Location = new Point(1132, 12);
             button1.Name = "button1";
             button1.Size = new Size(162, 35);
             button1.TabIndex = 15;
@@ -307,7 +295,6 @@
         private DateTimePicker dateTimePickerFrom;
         private DateTimePicker dateTimePickerTo;
         private Button buttonClear;
-        private Button buttonFilter;
         private Label label7;
         private ComboBox comboBoxEmployee;
         private TextBox saleIdTextBox;
