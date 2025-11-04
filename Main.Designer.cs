@@ -40,11 +40,6 @@
             modificarProductoToolStripMenuItem = new ToolStripMenuItem();
             eliminarProductoToolStripMenuItem = new ToolStripMenuItem();
             controlDeStockMínimoToolStripMenuItem = new ToolStripMenuItem();
-            clientesToolStripMenuItem = new ToolStripMenuItem();
-            listadoDeClientesToolStripMenuItem = new ToolStripMenuItem();
-            agregarClienteToolStripMenuItem = new ToolStripMenuItem();
-            modificarClienteToolStripMenuItem = new ToolStripMenuItem();
-            eliminarClienteToolStripMenuItem = new ToolStripMenuItem();
             proveedoresToolStripMenuItem = new ToolStripMenuItem();
             listadoDeProveedoresToolStripMenuItem = new ToolStripMenuItem();
             agregarProveedorToolStripMenuItem = new ToolStripMenuItem();
@@ -67,7 +62,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { ventasToolStripMenuItem, stockToolStripMenuItem, clientesToolStripMenuItem, proveedoresToolStripMenuItem, reportesToolStripMenuItem, empleadosToolStripMenuItem, ayudaToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { ventasToolStripMenuItem, stockToolStripMenuItem, proveedoresToolStripMenuItem, reportesToolStripMenuItem, empleadosToolStripMenuItem, ayudaToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
@@ -92,6 +87,7 @@
             listadoDeVentasDelDíaToolStripMenuItem.Name = "listadoDeVentasDelDíaToolStripMenuItem";
             listadoDeVentasDelDíaToolStripMenuItem.Size = new Size(211, 22);
             listadoDeVentasDelDíaToolStripMenuItem.Text = "Listado de ventas del día";
+            listadoDeVentasDelDíaToolStripMenuItem.Click += listadoDeVentasDelDíaToolStripMenuItem_Click;
             // 
             // listadoDeVentasPorMesToolStripMenuItem
             // 
@@ -145,37 +141,6 @@
             controlDeStockMínimoToolStripMenuItem.Name = "controlDeStockMínimoToolStripMenuItem";
             controlDeStockMínimoToolStripMenuItem.Size = new Size(206, 22);
             controlDeStockMínimoToolStripMenuItem.Text = "Control de stock mínimo";
-            // 
-            // clientesToolStripMenuItem
-            // 
-            clientesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { listadoDeClientesToolStripMenuItem, agregarClienteToolStripMenuItem, modificarClienteToolStripMenuItem, eliminarClienteToolStripMenuItem });
-            clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            clientesToolStripMenuItem.Size = new Size(61, 20);
-            clientesToolStripMenuItem.Text = "Clientes";
-            // 
-            // listadoDeClientesToolStripMenuItem
-            // 
-            listadoDeClientesToolStripMenuItem.Name = "listadoDeClientesToolStripMenuItem";
-            listadoDeClientesToolStripMenuItem.Size = new Size(171, 22);
-            listadoDeClientesToolStripMenuItem.Text = "Listado de clientes";
-            // 
-            // agregarClienteToolStripMenuItem
-            // 
-            agregarClienteToolStripMenuItem.Name = "agregarClienteToolStripMenuItem";
-            agregarClienteToolStripMenuItem.Size = new Size(171, 22);
-            agregarClienteToolStripMenuItem.Text = "Agregar cliente";
-            // 
-            // modificarClienteToolStripMenuItem
-            // 
-            modificarClienteToolStripMenuItem.Name = "modificarClienteToolStripMenuItem";
-            modificarClienteToolStripMenuItem.Size = new Size(171, 22);
-            modificarClienteToolStripMenuItem.Text = "Modificar cliente";
-            // 
-            // eliminarClienteToolStripMenuItem
-            // 
-            eliminarClienteToolStripMenuItem.Name = "eliminarClienteToolStripMenuItem";
-            eliminarClienteToolStripMenuItem.Size = new Size(171, 22);
-            eliminarClienteToolStripMenuItem.Text = "Eliminar cliente";
             // 
             // proveedoresToolStripMenuItem
             // 
@@ -282,13 +247,13 @@
             // manualDeUsuarioToolStripMenuItem
             // 
             manualDeUsuarioToolStripMenuItem.Name = "manualDeUsuarioToolStripMenuItem";
-            manualDeUsuarioToolStripMenuItem.Size = new Size(172, 22);
+            manualDeUsuarioToolStripMenuItem.Size = new Size(180, 22);
             manualDeUsuarioToolStripMenuItem.Text = "Manual de usuario";
             // 
             // acercaDeToolStripMenuItem
             // 
             acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            acercaDeToolStripMenuItem.Size = new Size(172, 22);
+            acercaDeToolStripMenuItem.Size = new Size(180, 22);
             acercaDeToolStripMenuItem.Text = "Acerca de";
             // 
             // Main
@@ -322,11 +287,6 @@
         private ToolStripMenuItem modificarProductoToolStripMenuItem;
         private ToolStripMenuItem eliminarProductoToolStripMenuItem;
         private ToolStripMenuItem controlDeStockMínimoToolStripMenuItem;
-        private ToolStripMenuItem clientesToolStripMenuItem;
-        private ToolStripMenuItem listadoDeClientesToolStripMenuItem;
-        private ToolStripMenuItem agregarClienteToolStripMenuItem;
-        private ToolStripMenuItem modificarClienteToolStripMenuItem;
-        private ToolStripMenuItem eliminarClienteToolStripMenuItem;
         private ToolStripMenuItem proveedoresToolStripMenuItem;
         private ToolStripMenuItem listadoDeProveedoresToolStripMenuItem;
         private ToolStripMenuItem agregarProveedorToolStripMenuItem;

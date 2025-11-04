@@ -31,9 +31,10 @@ namespace Kiosco_La_esquina.domain.services
                 DataTable response = _repository.Get(query);
 
                 foreach (DataRow row in response.Rows)
-                {
+                    // Reemplaza la línea problemática en el método GetAllEmployees
                     employees.Add(new Employee
                     {
+                        ID = Convert.ToInt32(row["ID"]), // Conversión explícita de object a int
                         FirstName = row["FirstName"].ToString(),
                         LastName = row["LastName"].ToString(),
                         Identifier = row["Identifier"].ToString(),
@@ -42,7 +43,7 @@ namespace Kiosco_La_esquina.domain.services
                         Salary = Convert.ToDecimal(row["Salary"]),
                         HireDate = Convert.ToDateTime(row["HireDate"])
                     });
-                }
+                 
             }
             catch (Exception ex)
             {
