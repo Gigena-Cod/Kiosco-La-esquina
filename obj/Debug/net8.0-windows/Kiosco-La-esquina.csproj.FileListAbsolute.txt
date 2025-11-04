@@ -57,3 +57,4 @@ C:\Users\Nahuel Gigena\Documents\GitHub\Kiosco-La-esquina\obj\Debug\net8.0-windo
 C:\Users\Nahuel Gigena\Documents\GitHub\Kiosco-La-esquina\obj\Debug\net8.0-windows\Kiosco_La_esquina.infrastructure.features.Suppliers.SupplierUpdateFlow.SupplierUpdateFlow.resources
 C:\Users\Nahuel Gigena\Documents\GitHub\Kiosco-La-esquina\obj\Debug\net8.0-windows\Kiosco_La_esquina.infrastructure.features.Products.ProductVisualizationFlow.ProductVisualizationFlow.resources
 C:\Users\Nahuel Gigena\Documents\GitHub\Kiosco-La-esquina\obj\Debug\net8.0-windows\Kiosco_La_esquina.infrastructure.features.Products.ProductCreationFlow.ProductCreationFlow.resources
+C:\Users\Nahuel Gigena\Documents\GitHub\Kiosco-La-esquina\obj\Debug\net8.0-windows\Kiosco_La_esquina.infrastructure.features.Products.ProductUpdateFlow.ProductUpdateFlow.resources

@@ -1,6 +1,6 @@
-﻿namespace Kiosco_La_esquina.infrastructure.features.Products.ProductCreationFlow
+﻿namespace Kiosco_La_esquina.infrastructure.features.Products.ProductUpdateFlow
 {
-    partial class ProductCreationFlow
+    partial class ProductUpdateFlow
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             buttonCancel = new Button();
-            buttonCreate = new Button();
+            buttonUpdate = new Button();
             groupBox2 = new GroupBox();
             supplierComboBox = new ComboBox();
             categoryComboBox = new ComboBox();
@@ -45,6 +45,8 @@
             descriptionTextBox = new TextBox();
             nameTextBox = new TextBox();
             title = new Label();
+            comboBoxProduct = new ComboBox();
+            label5 = new Label();
             groupBox2.SuspendLayout();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)stockNumericUpDown).BeginInit();
@@ -53,23 +55,23 @@
             // 
             // buttonCancel
             // 
-            buttonCancel.Location = new Point(120, 325);
+            buttonCancel.Location = new Point(120, 376);
             buttonCancel.Name = "buttonCancel";
             buttonCancel.Size = new Size(109, 35);
-            buttonCancel.TabIndex = 9;
+            buttonCancel.TabIndex = 14;
             buttonCancel.Text = "Cancelar";
             buttonCancel.UseVisualStyleBackColor = true;
             buttonCancel.Click += buttonCancel_Click;
             // 
-            // buttonCreate
+            // buttonUpdate
             // 
-            buttonCreate.Location = new Point(242, 325);
-            buttonCreate.Name = "buttonCreate";
-            buttonCreate.Size = new Size(109, 35);
-            buttonCreate.TabIndex = 8;
-            buttonCreate.Text = "Crear";
-            buttonCreate.UseVisualStyleBackColor = true;
-            buttonCreate.Click += buttonCreate_Click;
+            buttonUpdate.Location = new Point(242, 376);
+            buttonUpdate.Name = "buttonUpdate";
+            buttonUpdate.Size = new Size(109, 35);
+            buttonUpdate.TabIndex = 13;
+            buttonUpdate.Text = "Actualizar";
+            buttonUpdate.UseVisualStyleBackColor = true;
+            buttonUpdate.Click += buttonUpdate_Click;
             // 
             // groupBox2
             // 
@@ -77,10 +79,10 @@
             groupBox2.Controls.Add(categoryComboBox);
             groupBox2.Controls.Add(label7);
             groupBox2.Controls.Add(label8);
-            groupBox2.Location = new Point(12, 218);
+            groupBox2.Location = new Point(12, 269);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(447, 91);
-            groupBox2.TabIndex = 7;
+            groupBox2.TabIndex = 12;
             groupBox2.TabStop = false;
             groupBox2.Text = "Datos especificos";
             // 
@@ -128,10 +130,10 @@
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(descriptionTextBox);
             groupBox1.Controls.Add(nameTextBox);
-            groupBox1.Location = new Point(12, 61);
+            groupBox1.Location = new Point(12, 112);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(447, 136);
-            groupBox1.TabIndex = 6;
+            groupBox1.TabIndex = 11;
             groupBox1.TabStop = false;
             groupBox1.Text = "Datos basicos";
             // 
@@ -204,23 +206,42 @@
             title.Location = new Point(12, 9);
             title.Name = "title";
             title.Size = new Size(454, 39);
-            title.TabIndex = 5;
+            title.TabIndex = 10;
             title.Text = "Use este formulario para registrar nuevos productos en el sistema. Complete todos los campos obligatorios y presione ‘Agregar Producto’ para añadirlos a la lista";
             // 
-            // ProductCreationFlow
+            // comboBoxProduct
+            // 
+            comboBoxProduct.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxProduct.FormattingEnabled = true;
+            comboBoxProduct.Location = new Point(12, 74);
+            comboBoxProduct.Name = "comboBoxProduct";
+            comboBoxProduct.Size = new Size(223, 23);
+            comboBoxProduct.TabIndex = 16;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(10, 56);
+            label5.Name = "label5";
+            label5.Size = new Size(56, 15);
+            label5.TabIndex = 15;
+            label5.Text = "Producto";
+            // 
+            // ProductUpdateFlow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(476, 371);
+            ClientSize = new Size(475, 425);
+            Controls.Add(comboBoxProduct);
+            Controls.Add(label5);
             Controls.Add(buttonCancel);
-            Controls.Add(buttonCreate);
+            Controls.Add(buttonUpdate);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(title);
-            Name = "ProductCreationFlow";
+            Name = "ProductUpdateFlow";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "ProductCreationFlow";
-            Load += ProductCreationFlow_Load;
+            Text = "ProductUpdateFlow";
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             groupBox1.ResumeLayout(false);
@@ -228,18 +249,21 @@
             ((System.ComponentModel.ISupportInitialize)stockNumericUpDown).EndInit();
             ((System.ComponentModel.ISupportInitialize)priceNumericUpDown).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button buttonCancel;
-        private Button buttonCreate;
+        private Button buttonUpdate;
         private GroupBox groupBox2;
         private ComboBox supplierComboBox;
         private ComboBox categoryComboBox;
         private Label label7;
         private Label label8;
         private GroupBox groupBox1;
+        private NumericUpDown stockNumericUpDown;
+        private NumericUpDown priceNumericUpDown;
         private Label label4;
         private Label label3;
         private Label label2;
@@ -247,7 +271,7 @@
         private TextBox descriptionTextBox;
         private TextBox nameTextBox;
         private Label title;
-        private NumericUpDown stockNumericUpDown;
-        private NumericUpDown priceNumericUpDown;
+        private ComboBox comboBoxProduct;
+        private Label label5;
     }
 }

@@ -131,6 +131,7 @@
             modificarProductoToolStripMenuItem.Name = "modificarProductoToolStripMenuItem";
             modificarProductoToolStripMenuItem.Size = new Size(206, 22);
             modificarProductoToolStripMenuItem.Text = "Modificar producto";
+            modificarProductoToolStripMenuItem.Click += modificarProductoToolStripMenuItem_Click;
             // 
             // eliminarProductoToolStripMenuItem
             // 

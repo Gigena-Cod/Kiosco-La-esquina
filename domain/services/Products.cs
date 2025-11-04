@@ -35,7 +35,8 @@ namespace Kiosco_La_esquina.domain.services
                         Category = row["Category"].ToString(),
                         SupplierID = Convert.ToInt32(row["SupplierID"]),
                         Price = Convert.ToDecimal(row["Price"]),
-                        Stock = Convert.ToInt32(row["Stock"])
+                        Stock = Convert.ToInt32(row["Stock"]),
+                        Description = row["Description"].ToString()
                     });
                 }
             }
@@ -60,13 +61,14 @@ namespace Kiosco_La_esquina.domain.services
             try
             {
                 string query = $@"
-                INSERT INTO Product (Name, Category, SupplierID, Price, Stock)
+                INSERT INTO Product (Name, Category, SupplierID, Price, Stock, Description)
                 VALUES (
                     '{product.Name.Replace("'", "''")}',
                     '{product.Category.Replace("'", "''")}',
                     {product.SupplierID},
                     {product.Price.ToString(System.Globalization.CultureInfo.InvariantCulture)},
-                    {product.Stock}
+                    {product.Stock},
+                    '{product.Description.Replace("'", "''")}'
                 )";
 
                 int rowsAffected = _repository.Execute(query);

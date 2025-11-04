@@ -84,7 +84,8 @@ namespace Kiosco_La_esquina.infrastructure.features.Products.ProductCreationFlow
                     Category = categoryComboBox.SelectedItem.ToString(),
                     SupplierID = selectedSupplier.ID,
                     Price = decimal.TryParse(priceNumericUpDown.Text, out var price) ? price : 0,
-                    Stock = int.TryParse(stockNumericUpDown.Text, out var stock) ? stock : 0
+                    Stock = int.TryParse(stockNumericUpDown.Text, out var stock) ? stock : 0,
+                    Description = descriptionTextBox.Text.Trim()
                 };
 
                 _productService.CreateProduct(product);

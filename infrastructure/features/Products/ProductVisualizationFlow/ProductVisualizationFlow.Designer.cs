@@ -107,6 +107,7 @@
             searchTextBox.Name = "searchTextBox";
             searchTextBox.Size = new Size(242, 23);
             searchTextBox.TabIndex = 12;
+            searchTextBox.TextChanged += searchTextBox_TextChanged;
             // 
             // label2
             // 
@@ -124,7 +125,7 @@
             label1.Size = new Size(745, 39);
             label1.TabIndex = 10;
             label1.Text = "Lista de proveedores registrados. Use los filtros o la búsqueda para encontrar un proveedor rápidamente";
-           //
+            // 
             // ProductVisualizationFlow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
