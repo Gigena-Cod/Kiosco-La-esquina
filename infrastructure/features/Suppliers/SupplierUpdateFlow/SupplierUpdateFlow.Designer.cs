@@ -167,9 +167,9 @@
             // 
             label1.Location = new Point(12, 9);
             label1.Name = "label1";
-            label1.Size = new Size(458, 36);
+            label1.Size = new Size(458, 51);
             label1.TabIndex = 13;
-            label1.Text = "Seleccione el empleado que desea eliminar del sistema. Esta acción no se puede deshacer. Confirme antes de proceder";
+            label1.Text = "Modifique los datos del proveedor seleccionado y presione ‘Actualizar’ para guardar los cambios.\nAsegúrese de revisar todos los campos antes de confirmar la actualización";
             // 
             // SupplierUpdateFlow
             // 
@@ -184,7 +184,7 @@
             Controls.Add(label1);
             Name = "SupplierUpdateFlow";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "SupplierUpdateFlow";
+            Text = "Actualización de proveedor";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);

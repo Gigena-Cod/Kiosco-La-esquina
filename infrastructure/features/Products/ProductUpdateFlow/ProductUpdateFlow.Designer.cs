@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductUpdateFlow));
             buttonCancel = new Button();
             buttonUpdate = new Button();
             groupBox2 = new GroupBox();
@@ -207,7 +208,7 @@
             title.Name = "title";
             title.Size = new Size(454, 39);
             title.TabIndex = 10;
-            title.Text = "Use este formulario para registrar nuevos productos en el sistema. Complete todos los campos obligatorios y presione ‘Agregar Producto’ para añadirlos a la lista";
+            title.Text = resources.GetString("title.Text");
             // 
             // comboBoxProduct
             // 
@@ -241,7 +242,7 @@
             Controls.Add(title);
             Name = "ProductUpdateFlow";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "ProductUpdateFlow";
+            Text = "Actualización de producto";
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             groupBox1.ResumeLayout(false);

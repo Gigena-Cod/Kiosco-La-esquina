@@ -3,16 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\products\\productvisualizationflow\\productvisualizationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\products\\productvisualizationflow\\productvisualizationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\products\\productupdateflow\\productupdateflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\products\\productupdateflow\\productupdateflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\products\\productdeleteflow\\productdeleteflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\products\\productdeleteflow\\productdeleteflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\products\\productcreationflow\\productcreationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\products\\productcreationflow\\productcreationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\suppliers\\suppliervisualizationflow\\suppliervisualizationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\suppliers\\suppliervisualizationflow\\suppliervisualizationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\suppliers\\supplierupdateflow\\supplierupdateflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\suppliers\\supplierupdateflow\\supplierupdateflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\suppliers\\supplierdeleteflow\\supplierdeleteflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\suppliers\\supplierdeleteflow\\supplierdeleteflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\suppliers\\suppliercreationflow\\suppliercreationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\suppliers\\suppliercreationflow\\suppliercreationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\products\\productdeleteflow\\productdeleteflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\products\\productdeleteflow\\productdeleteflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\products\\productdeleteflow\\productdeleteflow.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\products\\productdeleteflow\\productdeleteflow.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\products\\productdeleteflow\\productdeleteflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\products\\productdeleteflow\\productdeleteflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +50,107 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductVisualizationFlow.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Products\\ProductVisualizationFlow\\ProductVisualizationFlow.cs",
+              "RelativeDocumentMoniker": "infrastructure\\features\\Products\\ProductVisualizationFlow\\ProductVisualizationFlow.cs",
+              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Products\\ProductVisualizationFlow\\ProductVisualizationFlow.cs [Dise\u00F1o]",
+              "RelativeToolTip": "infrastructure\\features\\Products\\ProductVisualizationFlow\\ProductVisualizationFlow.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T15:46:49.036Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ProductUpdateFlow.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Products\\ProductUpdateFlow\\ProductUpdateFlow.cs",
+              "RelativeDocumentMoniker": "infrastructure\\features\\Products\\ProductUpdateFlow\\ProductUpdateFlow.cs",
+              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Products\\ProductUpdateFlow\\ProductUpdateFlow.cs [Dise\u00F1o]",
+              "RelativeToolTip": "infrastructure\\features\\Products\\ProductUpdateFlow\\ProductUpdateFlow.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T15:45:55.951Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductCreationFlow.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Products\\ProductCreationFlow\\ProductCreationFlow.cs",
+              "RelativeDocumentMoniker": "infrastructure\\features\\Products\\ProductCreationFlow\\ProductCreationFlow.cs",
+              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Products\\ProductCreationFlow\\ProductCreationFlow.cs [Dise\u00F1o]",
+              "RelativeToolTip": "infrastructure\\features\\Products\\ProductCreationFlow\\ProductCreationFlow.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T15:44:37.708Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SupplierVisualizationFlow.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Suppliers\\SupplierVisualizationFlow\\SupplierVisualizationFlow.cs",
+              "RelativeDocumentMoniker": "infrastructure\\features\\Suppliers\\SupplierVisualizationFlow\\SupplierVisualizationFlow.cs",
+              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Suppliers\\SupplierVisualizationFlow\\SupplierVisualizationFlow.cs [Dise\u00F1o]",
+              "RelativeToolTip": "infrastructure\\features\\Suppliers\\SupplierVisualizationFlow\\SupplierVisualizationFlow.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T15:42:50.786Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SupplierUpdateFlow.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Suppliers\\SupplierUpdateFlow\\SupplierUpdateFlow.cs",
+              "RelativeDocumentMoniker": "infrastructure\\features\\Suppliers\\SupplierUpdateFlow\\SupplierUpdateFlow.cs",
+              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Suppliers\\SupplierUpdateFlow\\SupplierUpdateFlow.cs [Dise\u00F1o]",
+              "RelativeToolTip": "infrastructure\\features\\Suppliers\\SupplierUpdateFlow\\SupplierUpdateFlow.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T15:41:42.289Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SupplierDeleteFlow.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Suppliers\\SupplierDeleteFlow\\SupplierDeleteFlow.cs",
+              "RelativeDocumentMoniker": "infrastructure\\features\\Suppliers\\SupplierDeleteFlow\\SupplierDeleteFlow.cs",
+              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Suppliers\\SupplierDeleteFlow\\SupplierDeleteFlow.cs [Dise\u00F1o]",
+              "RelativeToolTip": "infrastructure\\features\\Suppliers\\SupplierDeleteFlow\\SupplierDeleteFlow.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T15:41:19.249Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductDeleteFlow.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Products\\ProductDeleteFlow\\ProductDeleteFlow.cs",
+              "RelativeDocumentMoniker": "infrastructure\\features\\Products\\ProductDeleteFlow\\ProductDeleteFlow.cs",
+              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Products\\ProductDeleteFlow\\ProductDeleteFlow.cs [Dise\u00F1o]",
+              "RelativeToolTip": "infrastructure\\features\\Products\\ProductDeleteFlow\\ProductDeleteFlow.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T14:31:16.679Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SupplierCreationFlow.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Suppliers\\SupplierCreationFlow\\SupplierCreationFlow.cs",
+              "RelativeDocumentMoniker": "infrastructure\\features\\Suppliers\\SupplierCreationFlow\\SupplierCreationFlow.cs",
+              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Suppliers\\SupplierCreationFlow\\SupplierCreationFlow.cs [Dise\u00F1o]",
+              "RelativeToolTip": "infrastructure\\features\\Suppliers\\SupplierCreationFlow\\SupplierCreationFlow.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T15:41:01.379Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "ProductDeleteFlow.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Products\\ProductDeleteFlow\\ProductDeleteFlow.Designer.cs",
               "RelativeDocumentMoniker": "infrastructure\\features\\Products\\ProductDeleteFlow\\ProductDeleteFlow.Designer.cs",
@@ -39,28 +163,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "ProductDeleteFlow.cs",
               "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Products\\ProductDeleteFlow\\ProductDeleteFlow.cs",
               "RelativeDocumentMoniker": "infrastructure\\features\\Products\\ProductDeleteFlow\\ProductDeleteFlow.cs",
-              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Products\\ProductDeleteFlow\\ProductDeleteFlow.cs*",
-              "RelativeToolTip": "infrastructure\\features\\Products\\ProductDeleteFlow\\ProductDeleteFlow.cs*",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAiwJoAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Products\\ProductDeleteFlow\\ProductDeleteFlow.cs",
+              "RelativeToolTip": "infrastructure\\features\\Products\\ProductDeleteFlow\\ProductDeleteFlow.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAowJUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-04T14:31:18.146Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductDeleteFlow.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Products\\ProductDeleteFlow\\ProductDeleteFlow.cs",
-              "RelativeDocumentMoniker": "infrastructure\\features\\Products\\ProductDeleteFlow\\ProductDeleteFlow.cs",
-              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Products\\ProductDeleteFlow\\ProductDeleteFlow.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "infrastructure\\features\\Products\\ProductDeleteFlow\\ProductDeleteFlow.cs [Dise\u00F1o]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T14:31:16.679Z",
-              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

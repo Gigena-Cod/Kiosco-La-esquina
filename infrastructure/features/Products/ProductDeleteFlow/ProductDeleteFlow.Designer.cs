@@ -202,11 +202,11 @@
             // 
             // title
             // 
-            title.Location = new Point(12, 9);
+            title.Location = new Point(4, 9);
             title.Name = "title";
-            title.Size = new Size(454, 39);
+            title.Size = new Size(470, 63);
             title.TabIndex = 10;
-            title.Text = "Use este formulario para registrar nuevos productos en el sistema. Complete todos los campos obligatorios y presione ‘Agregar Producto’ para añadirlos a la lista";
+            title.Text = "Use este formulario para eliminar productos existentes del sistema.\nSeleccione un producto de la lista y presione ‘Eliminar’ para borrarlo permanentemente";
             // 
             // comboBoxProduct
             // 
@@ -240,7 +240,7 @@
             Controls.Add(groupBox1);
             Controls.Add(title);
             Name = "ProductDeleteFlow";
-            Text = "ProductDeleteFlow";
+            Text = "Eliminación de producto";
             Load += ProductDeleteFlow_Load;
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
@@ -250,7 +250,7 @@
             ((System.ComponentModel.ISupportInitialize)priceNumericUpDown).EndInit();
             ResumeLayout(false);
             PerformLayout();
-         
+
 
         }
 

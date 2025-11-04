@@ -162,7 +162,7 @@
             Controls.Add(title);
             Name = "SupplierCreationFlow";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "SupplierCreationFlow";
+            Text = "Agregar proveedor";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
