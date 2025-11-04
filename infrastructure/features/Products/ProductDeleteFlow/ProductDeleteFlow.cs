@@ -30,17 +30,16 @@ namespace Kiosco_La_esquina.infrastructure.features.Products.ProductDeleteFlow
         {
             LoadSuppliers();
             LoadProductsCombo();
-            comboBoxProduct.SelectedIndex = -1; // sin selección al abrir
+            comboBoxProduct.SelectedIndex = -1; // sin selección
+            buttonDelete.Enabled = false;       // deshabilitado al iniciar
             ClearDetail();
         }
 
         private void ConfigureControls()
         {
-            // quitar negrita
             nameTextBox.Font = new System.Drawing.Font(nameTextBox.Font, System.Drawing.FontStyle.Regular);
             descriptionTextBox.Font = new System.Drawing.Font(descriptionTextBox.Font, System.Drawing.FontStyle.Regular);
 
-            // NumericUpDowns
             priceNumericUpDown.Minimum = 0;
             priceNumericUpDown.Maximum = 1_000_000m;
             priceNumericUpDown.DecimalPlaces = 2;
@@ -68,13 +67,21 @@ namespace Kiosco_La_esquina.infrastructure.features.Products.ProductDeleteFlow
             ClearDetail();
         }
 
+        private bool _deleting;
+
         private void comboBoxProduct_SelectedIndexChanged(object? sender, EventArgs e)
         {
-            if (comboBoxProduct.SelectedItem is not Product p) { ClearDetail(); return; }
+            if (comboBoxProduct.SelectedItem is not Product p)
+            {
+                ClearDetail();
+                buttonDelete.Enabled = false;
+                return;
+            }
 
-            nameTextBox.Text = p.Name ?? string.Empty;
-            descriptionTextBox.Text = p.Description ?? string.Empty;
+            buttonDelete.Enabled = true;
 
+            nameTextBox.Text = p.Name ?? "";
+            descriptionTextBox.Text = p.Description ?? "";
             priceNumericUpDown.Value = Clamp(priceNumericUpDown, p.Price);
             stockNumericUpDown.Value = Clamp(stockNumericUpDown, p.Stock);
 
@@ -84,48 +91,67 @@ namespace Kiosco_La_esquina.infrastructure.features.Products.ProductDeleteFlow
 
             var supplier = _suppliers.FirstOrDefault(s => s.ID == p.SupplierID);
             supplierComboBox.Items.Clear();
-            supplierComboBox.Items.Add(supplier != null ? supplier.Name : p.SupplierID.ToString());
+            supplierComboBox.Items.Add(supplier?.Name ?? p.SupplierID.ToString());
             supplierComboBox.SelectedIndex = 0;
         }
 
         private void buttonDelete_Click(object? sender, EventArgs e)
         {
-            if (comboBoxProduct.SelectedItem is not Product p)
-            {
-                MessageBox.Show("Seleccione un producto.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
+            if (_deleting) return; // evita reentradas
+            if (comboBoxProduct.SelectedItem is not Product p) return; // nada seleccionado
+
+            _deleting = true;
+            buttonDelete.Enabled = false; // bloquea doble clic
+
+            var id = p.ID;
+            var name = p.Name ?? "(sin nombre)";
 
             var ok = MessageBox.Show(
-                $"¿Eliminar definitivamente \"{p.Name}\" (ID {p.ID})?",
+                $"¿Eliminar definitivamente \"{name}\" (ID {id})?",
                 "Confirmar eliminación",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Warning
             ) == DialogResult.Yes;
 
-            if (!ok) return;
+            if (!ok)
+            {
+                // re-habilita si sigue habiendo selección
+                buttonDelete.Enabled = comboBoxProduct.SelectedIndex >= 0;
+                _deleting = false;
+                return;
+            }
 
             try
             {
-                var deleted = _productService.DeleteProduct(p.ID);
+                var deleted = _productService.DeleteProduct(id);
                 if (deleted)
                 {
-                    MessageBox.Show("Producto eliminado.", "OK", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Producto eliminado.", "OK",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
                     LoadProductsCombo();
                     comboBoxProduct.SelectedIndex = -1;
                     ClearDetail();
-                    return;
+                    // queda deshabilitado hasta nueva selección
                 }
-               
-                
-                MessageBox.Show("No se eliminó el producto.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                
+                else
+                {
+                    MessageBox.Show("No se eliminó el producto.", "Info",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    buttonDelete.Enabled = comboBoxProduct.SelectedIndex >= 0;
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error al eliminar: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Error al eliminar: {ex.Message}", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                buttonDelete.Enabled = comboBoxProduct.SelectedIndex >= 0;
+            }
+            finally
+            {
+                _deleting = false;
             }
         }
+
 
         private void SetInputsEnabled(bool _)
         {
