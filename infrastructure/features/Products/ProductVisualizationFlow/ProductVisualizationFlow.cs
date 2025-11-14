@@ -1,8 +1,9 @@
-﻿using Kiosco_La_esquina.domain.services;
-using Kiosco_La_esquina.domain.models;
+﻿using Kiosco_La_esquina.domain.models;
+using Kiosco_La_esquina.domain.services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Windows.Forms;
 
 namespace Kiosco_La_esquina.infrastructure.features.Products.ProductVisualizationFlow
@@ -120,6 +121,58 @@ namespace Kiosco_La_esquina.infrastructure.features.Products.ProductVisualizatio
         {
             Close();
         }
-       
+
+        private void buttonExportProducts_Click_1(object sender, EventArgs e)
+        {
+            if (_products == null || _products.Count == 0)
+            {
+                MessageBox.Show("No hay productos para exportar.", "Información",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.Title = "Guardar lista de productos";
+                saveFileDialog.Filter = "Archivos CSV (*.csv)|*.csv|Archivos de texto (*.txt)|*.txt";
+                saveFileDialog.DefaultExt = "csv";
+                saveFileDialog.AddExtension = true;
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        using (StreamWriter writer = new StreamWriter(saveFileDialog.FileName, false, Encoding.UTF8))
+                        {
+                            // Cabecera
+                            writer.WriteLine("ID;Nombre;Descripción;Precio;Stock;Categoría;ID Proveedor");
+
+                            // Filas
+                            foreach (var p in _products)
+                            {
+                                writer.WriteLine(
+                                    $"{p.ID};" +
+                                    $"{p.Name};" +
+                                    $"{p.Description};" +
+                                    $"{p.Price};" +
+                                    $"{p.Stock};" +
+                                    $"{p.Category};" +
+                                    $"{p.SupplierID}"
+                                );
+                            }
+                        }
+
+                        MessageBox.Show("Productos exportados correctamente.", "Éxito",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error al guardar el archivo: {ex.Message}", "Error",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+        }
+
     }
 }

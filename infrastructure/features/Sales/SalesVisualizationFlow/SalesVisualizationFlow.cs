@@ -168,6 +168,9 @@ namespace Kiosco_La_esquina.infrastructure.features.Sales.SalesVisualizationFlow
             // si escribe letras, no dispara; evita ruido
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //TODO: Implemente funcionality for register new sale
+        }
     }
 }

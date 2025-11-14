@@ -257,6 +257,7 @@
             button1.TabIndex = 15;
             button1.Text = "Registrar nueva venta";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // SalesVisualizationFlow
             // 
