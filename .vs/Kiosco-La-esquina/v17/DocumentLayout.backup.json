@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\suppliers\\suppliervisualizationflow\\suppliervisualizationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\suppliers\\suppliervisualizationflow\\suppliervisualizationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\suppliers\\suppliervisualizationflow\\suppliervisualizationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\suppliers\\suppliervisualizationflow\\suppliervisualizationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\sales\\salesvisualizationflow\\salesvisualizationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\sales\\salesvisualizationflow\\salesvisualizationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -67,31 +75,56 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SupplierVisualizationFlow.cs",
+              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Suppliers\\SupplierVisualizationFlow\\SupplierVisualizationFlow.cs",
+              "RelativeDocumentMoniker": "infrastructure\\features\\Suppliers\\SupplierVisualizationFlow\\SupplierVisualizationFlow.cs",
+              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Suppliers\\SupplierVisualizationFlow\\SupplierVisualizationFlow.cs",
+              "RelativeToolTip": "infrastructure\\features\\Suppliers\\SupplierVisualizationFlow\\SupplierVisualizationFlow.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAiwHQAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T18:09:16.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SupplierVisualizationFlow.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Suppliers\\SupplierVisualizationFlow\\SupplierVisualizationFlow.cs",
+              "RelativeDocumentMoniker": "infrastructure\\features\\Suppliers\\SupplierVisualizationFlow\\SupplierVisualizationFlow.cs",
+              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Suppliers\\SupplierVisualizationFlow\\SupplierVisualizationFlow.cs [Dise\u00F1o]",
+              "RelativeToolTip": "infrastructure\\features\\Suppliers\\SupplierVisualizationFlow\\SupplierVisualizationFlow.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T18:09:15.056Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "SalesVisualizationFlow.cs",
               "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Sales\\SalesVisualizationFlow\\SalesVisualizationFlow.cs",
               "RelativeDocumentMoniker": "infrastructure\\features\\Sales\\SalesVisualizationFlow\\SalesVisualizationFlow.cs",
-              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Sales\\SalesVisualizationFlow\\SalesVisualizationFlow.cs*",
-              "RelativeToolTip": "infrastructure\\features\\Sales\\SalesVisualizationFlow\\SalesVisualizationFlow.cs*",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAwwBcAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Sales\\SalesVisualizationFlow\\SalesVisualizationFlow.cs",
+              "RelativeToolTip": "infrastructure\\features\\Sales\\SalesVisualizationFlow\\SalesVisualizationFlow.cs",
+              "ViewState": "AgIAAPYAAAAAAAAAAAAgwBUBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T17:53:19.806Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "SalesVisualizationFlow.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Sales\\SalesVisualizationFlow\\SalesVisualizationFlow.cs",
               "RelativeDocumentMoniker": "infrastructure\\features\\Sales\\SalesVisualizationFlow\\SalesVisualizationFlow.cs",
-              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Sales\\SalesVisualizationFlow\\SalesVisualizationFlow.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "infrastructure\\features\\Sales\\SalesVisualizationFlow\\SalesVisualizationFlow.cs [Dise\u00F1o]*",
+              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Sales\\SalesVisualizationFlow\\SalesVisualizationFlow.cs [Dise\u00F1o]",
+              "RelativeToolTip": "infrastructure\\features\\Sales\\SalesVisualizationFlow\\SalesVisualizationFlow.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T17:52:55.313Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Main.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\Main.cs",
               "RelativeDocumentMoniker": "Main.cs",
@@ -103,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Main.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\Main.Designer.cs",
               "RelativeDocumentMoniker": "Main.Designer.cs",
@@ -116,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Sale.cs",
               "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\domain\\models\\Sale.cs",
               "RelativeDocumentMoniker": "domain\\models\\Sale.cs",
@@ -129,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Sales.cs",
               "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Reports\\Sales\\Sales.cs",
               "RelativeDocumentMoniker": "infrastructure\\features\\Reports\\Sales\\Sales.cs",
@@ -142,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "SaleDetail.cs",
               "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\domain\\services\\SaleDetail.cs",
               "RelativeDocumentMoniker": "domain\\services\\SaleDetail.cs",
@@ -155,7 +188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "SaleDetails.cs",
               "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\domain\\models\\SaleDetails.cs",
               "RelativeDocumentMoniker": "domain\\models\\SaleDetails.cs",
@@ -168,7 +201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Sales.cs",
               "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\domain\\services\\Sales.cs",
               "RelativeDocumentMoniker": "domain\\services\\Sales.cs",
@@ -181,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Sales.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Reports\\Sales\\Sales.Designer.cs",
               "RelativeDocumentMoniker": "infrastructure\\features\\Reports\\Sales\\Sales.Designer.cs",
@@ -194,7 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Sales.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Reports\\Sales\\Sales.cs",
               "RelativeDocumentMoniker": "infrastructure\\features\\Reports\\Sales\\Sales.cs",
@@ -206,7 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Main.cs",
               "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\Main.cs",
               "RelativeDocumentMoniker": "Main.cs",
@@ -219,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Employee.cs",
               "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\domain\\services\\Employee.cs",
               "RelativeDocumentMoniker": "domain\\services\\Employee.cs",
