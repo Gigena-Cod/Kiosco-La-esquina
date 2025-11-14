@@ -100,6 +100,7 @@
             buttonExportProducts.TabIndex = 13;
             buttonExportProducts.Text = "Exportar";
             buttonExportProducts.UseVisualStyleBackColor = true;
+            buttonExportProducts.Click += buttonExportProducts_Click_1;
             // 
             // searchTextBox
             // 

@@ -102,7 +102,53 @@ namespace Kiosco_La_esquina.infrastructure.features.Suppliers.SupplierVisualizat
 
         private void buttonExportSupplier_Click(object sender, EventArgs e)
         {
+            if (_suppliers == null || _suppliers.Count == 0)
+            {
+                MessageBox.Show("No hay proveedores para exportar.", "Información",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
 
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.Title = "Guardar lista de proveedores";
+                saveFileDialog.Filter = "Archivos CSV (*.csv)|*.csv|Archivos de texto (*.txt)|*.txt";
+                saveFileDialog.DefaultExt = "csv";
+                saveFileDialog.AddExtension = true;
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        using (StreamWriter writer = new StreamWriter(saveFileDialog.FileName, false, Encoding.UTF8))
+                        {
+                            // CABECERA
+                            writer.WriteLine("ID;Nombre;NombreContacto;Telefono;Direccion");
+
+                            // FILAS
+                            foreach (var s in _suppliers)
+                            {
+                                writer.WriteLine(
+                                    $"{s.ID};" +
+                                    $"{s.Name};" +
+                                    $"{s.Contact_Name};" +
+                                    $"{s.Phone};" +
+                                    $"{s.Address}"
+                                );
+                            }
+                        }
+
+                        MessageBox.Show("Proveedores exportados correctamente.", "Éxito",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error al guardar el archivo: {ex.Message}", "Error",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
         }
+
     }
 }
