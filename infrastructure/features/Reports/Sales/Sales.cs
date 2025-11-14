@@ -52,13 +52,7 @@ namespace Kiosco_La_esquina.infrastructure.features.Reports.Sales
             dtpTo.Value = DateTime.Today;
             dtpFrom.Value = DateTime.Today.AddDays(-30);
 
-            cboEmployee.Items.Clear();
-            cboEmployee.Items.Add("Todos");
-            cboEmployee.SelectedIndex = 0;
-
-            cboProduct.Items.Clear();
-            cboProduct.Items.Add("Todos");
-            cboProduct.SelectedIndex = 0;
+           
         }
 
         private void BtnApplyFilters_Click(object? sender, EventArgs e)

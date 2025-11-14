@@ -46,7 +46,7 @@
             label2 = new Label();
             label1 = new Label();
             groupBox2 = new GroupBox();
-            dataGridView1 = new DataGridView();
+            dataGridViewSaleDetails = new DataGridView();
             productName = new DataGridViewTextBoxColumn();
             productQuantity = new DataGridViewTextBoxColumn();
             productPrice = new DataGridViewTextBoxColumn();
@@ -57,7 +57,7 @@
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewSales).BeginInit();
             groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewSaleDetails).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
@@ -195,7 +195,7 @@
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(dataGridView1);
+            groupBox2.Controls.Add(dataGridViewSaleDetails);
             groupBox2.Controls.Add(label4);
             groupBox2.Location = new Point(869, 89);
             groupBox2.Name = "groupBox2";
@@ -204,14 +204,14 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Detalle de la venta";
             // 
-            // dataGridView1
+            // dataGridViewSaleDetails
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { productName, productQuantity, productPrice, productSubtotal });
-            dataGridView1.Location = new Point(8, 138);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(411, 429);
-            dataGridView1.TabIndex = 14;
+            dataGridViewSaleDetails.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewSaleDetails.Columns.AddRange(new DataGridViewColumn[] { productName, productQuantity, productPrice, productSubtotal });
+            dataGridViewSaleDetails.Location = new Point(8, 138);
+            dataGridViewSaleDetails.Name = "dataGridViewSaleDetails";
+            dataGridViewSaleDetails.Size = new Size(411, 429);
+            dataGridViewSaleDetails.TabIndex = 14;
             // 
             // productName
             // 
@@ -276,7 +276,7 @@
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewSales).EndInit();
             groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewSaleDetails).EndInit();
             ResumeLayout(false);
         }
 
@@ -287,7 +287,7 @@
         private Label label2;
         private Label label1;
         private GroupBox groupBox2;
-        private DataGridView dataGridView1;
+        private DataGridView dataGridViewSaleDetails;
         private Label label4;
         private Label label3;
         private Button button1;

@@ -32,10 +32,6 @@
             dtpFrom = new DateTimePicker();
             lblTo = new Label();
             dtpTo = new DateTimePicker();
-            lblEmployee = new Label();
-            cboEmployee = new ComboBox();
-            lblProduct = new Label();
-            cboProduct = new ComboBox();
             actionsPanel = new FlowLayoutPanel();
             btnApplyFilters = new Button();
             btnClearFilters = new Button();
@@ -77,10 +73,6 @@
             filtersTable.Controls.Add(dtpFrom, 1, 0);
             filtersTable.Controls.Add(lblTo, 2, 0);
             filtersTable.Controls.Add(dtpTo, 3, 0);
-            filtersTable.Controls.Add(lblEmployee, 0, 1);
-            filtersTable.Controls.Add(cboEmployee, 1, 1);
-            filtersTable.Controls.Add(lblProduct, 2, 1);
-            filtersTable.Controls.Add(cboProduct, 3, 1);
             filtersTable.Dock = DockStyle.Fill;
             filtersTable.Location = new Point(0, 0);
             filtersTable.Name = "filtersTable";
@@ -127,46 +119,6 @@
             dtpTo.Name = "dtpTo";
             dtpTo.Size = new Size(255, 23);
             dtpTo.TabIndex = 3;
-            // 
-            // lblEmployee
-            // 
-            lblEmployee.Anchor = AnchorStyles.Left;
-            lblEmployee.AutoSize = true;
-            lblEmployee.Location = new Point(3, 60);
-            lblEmployee.Name = "lblEmployee";
-            lblEmployee.Size = new Size(60, 15);
-            lblEmployee.TabIndex = 4;
-            lblEmployee.Text = "Empleado";
-            // 
-            // cboEmployee
-            // 
-            cboEmployee.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            cboEmployee.DropDownStyle = ComboBoxStyle.DropDownList;
-            cboEmployee.FormattingEnabled = true;
-            cboEmployee.Location = new Point(262, 56);
-            cboEmployee.Name = "cboEmployee";
-            cboEmployee.Size = new Size(253, 23);
-            cboEmployee.TabIndex = 5;
-            // 
-            // lblProduct
-            // 
-            lblProduct.Anchor = AnchorStyles.Left;
-            lblProduct.AutoSize = true;
-            lblProduct.Location = new Point(521, 60);
-            lblProduct.Name = "lblProduct";
-            lblProduct.Size = new Size(56, 15);
-            lblProduct.TabIndex = 6;
-            lblProduct.Text = "Producto";
-            // 
-            // cboProduct
-            // 
-            cboProduct.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            cboProduct.DropDownStyle = ComboBoxStyle.DropDownList;
-            cboProduct.FormattingEnabled = true;
-            cboProduct.Location = new Point(780, 56);
-            cboProduct.Name = "cboProduct";
-            cboProduct.Size = new Size(255, 23);
-            cboProduct.TabIndex = 7;
             // 
             // actionsPanel
             // 
@@ -314,7 +266,7 @@
             Controls.Add(filtersPanel);
             Name = "Sales";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Sales";
+            Text = "Reportes";
             Load += Sales_Load;
             filtersPanel.ResumeLayout(false);
             filtersTable.ResumeLayout(false);
@@ -335,10 +287,6 @@
         private DateTimePicker dtpFrom;
         private Label lblTo;
         private DateTimePicker dtpTo;
-        private Label lblEmployee;
-        private ComboBox cboEmployee;
-        private Label lblProduct;
-        private ComboBox cboProduct;
         private FlowLayoutPanel actionsPanel;
         private Button btnApplyFilters;
         private Button btnClearFilters;

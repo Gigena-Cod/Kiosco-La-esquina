@@ -122,18 +122,12 @@ namespace Kiosco_La_esquina
             saleForm.Show();
         }
 
-        
 
-        private void ventasPorDíaToolStripMenuItem_Click(object sender, EventArgs e)
+        private void productoMásVendidoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void ventasPorMesToolStripMenuItem_Click(object sender, EventArgs e)
-        {Sales frm = new Sales();
+            Sales frm = new Sales();
             frm.ShowDialog();
         }
-
     }
 }
 
