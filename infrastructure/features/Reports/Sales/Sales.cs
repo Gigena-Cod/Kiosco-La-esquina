@@ -8,6 +8,10 @@ namespace Kiosco_La_esquina.infrastructure.features.Reports.Sales
     {
         private readonly SaleService _saleService = new();
         private readonly SaleDetailService _detailService = new();
+        private readonly ProductService _productService = new();
+
+        // cache de productos: ID -> Nombre
+        private Dictionary<int, string> _productNames = new();
 
         public Sales()
         {
@@ -21,8 +25,14 @@ namespace Kiosco_La_esquina.infrastructure.features.Reports.Sales
         {
             ConfigureCharts();
             InitFilters();
+
+            // cargamos todos los productos una sola vez
+            _productNames = _productService
+                .GetAllProducts()
+                .ToDictionary(p => p.ID, p => p.Name ?? string.Empty);
+
             LoadCharts();
-        }
+        }       
 
         private void ConfigureCharts()
         {
@@ -182,33 +192,75 @@ namespace Kiosco_La_esquina.infrastructure.features.Reports.Sales
                     Quantity = g.Sum(x => x.Quantity)
                 })
                 .OrderByDescending(x => x.Quantity)
-                .Take(10)
+                .Take(5)
                 .ToList();
 
             topProductsChart.Series.Clear();
+            topProductsChart.Legends.Clear(); // quitamos las previas
 
             if (grouped.Count == 0)
                 return;
 
-            var series = topProductsChart.Series.Add("Cantidad vendida");
+            // serie principal
+            var series = topProductsChart.Series.Add("TopProductos");
             series.ChartType = SeriesChartType.Column;
             series.IsValueShownAsLabel = true;
             series.IsXValueIndexed = true;
+            series.IsVisibleInLegend = false;
+
+            // paleta de colores fija
+            var colors = new[]
+            {
+        Color.SteelBlue,
+        Color.Orange,
+        Color.MediumSeaGreen,
+        Color.MediumPurple,
+        Color.IndianRed
+    };
+
+            // leyenda personalizada al costado
+            var legend = new Legend("Productos");
+            legend.Docking = Docking.Right;
+            legend.Alignment = StringAlignment.Center;
+            legend.Font = new Font("Segoe UI", 9);
+            topProductsChart.Legends.Add(legend);
 
             for (int i = 0; i < grouped.Count; i++)
             {
                 var item = grouped[i];
+
+                string label = _productNames.TryGetValue(item.ProductId, out var name)
+                    ? name
+                    : $"Producto {item.ProductId}";
+
+                // agregamos barra
                 int idx = series.Points.AddY(item.Quantity);
-                series.Points[idx].AxisLabel = item.ProductId.ToString();
+                series.Points[idx].Color = colors[i % colors.Length];
+
+                // el eje X queda vacío
+                series.Points[idx].AxisLabel = "";
+
+                // agregamos entrada a leyenda
+                var legendItem = new LegendItem
+                {
+                    Name = label,
+                    Color = colors[i % colors.Length],
+                    BorderColor = Color.Black
+                };
+
+                legend.CustomItems.Add(legendItem);
             }
 
+            // configuración visual
             var area = topProductsChart.ChartAreas[0];
             area.AxisX.Interval = 1;
             area.AxisX.MajorGrid.Enabled = false;
             area.AxisY.MajorGrid.LineColor = Color.LightGray;
 
-            // nombres inclinados
-            area.AxisX.LabelStyle.Angle = -45;
+            // sacamos texto del eje X
+            area.AxisX.LabelStyle.Enabled = false;
+
+            series["PointWidth"] = "0.6";
         }
 
 

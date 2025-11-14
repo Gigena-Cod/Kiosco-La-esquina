@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\domain\\services\\saledetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:domain\\services\\saledetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\reports\\sales\\sales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\reports\\sales\\sales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\reports\\sales\\sales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\reports\\sales\\sales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\domain\\services\\saledetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:domain\\services\\saledetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\domain\\models\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -63,25 +63,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Sales.cs",
               "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Reports\\Sales\\Sales.cs",
               "RelativeDocumentMoniker": "infrastructure\\features\\Reports\\Sales\\Sales.cs",
-              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Reports\\Sales\\Sales.cs",
-              "RelativeToolTip": "infrastructure\\features\\Reports\\Sales\\Sales.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAkwEkAAABHAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Reports\\Sales\\Sales.cs*",
+              "RelativeToolTip": "infrastructure\\features\\Reports\\Sales\\Sales.cs*",
+              "ViewState": "AgIAAM4AAAAAAAAAAAAiwPUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T15:16:35.911Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "SaleDetail.cs",
               "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\domain\\services\\SaleDetail.cs",
               "RelativeDocumentMoniker": "domain\\services\\SaleDetail.cs",
-              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\domain\\services\\SaleDetail.cs*",
-              "RelativeToolTip": "domain\\services\\SaleDetail.cs*",
+              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\domain\\services\\SaleDetail.cs",
+              "RelativeToolTip": "domain\\services\\SaleDetail.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAmwBYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T15:30:31.198Z",
@@ -128,12 +128,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Sales.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Reports\\Sales\\Sales.cs",
               "RelativeDocumentMoniker": "infrastructure\\features\\Reports\\Sales\\Sales.cs",
-              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Reports\\Sales\\Sales.cs [Dise\u00F1o]",
-              "RelativeToolTip": "infrastructure\\features\\Reports\\Sales\\Sales.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Reports\\Sales\\Sales.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "infrastructure\\features\\Reports\\Sales\\Sales.cs [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T15:06:27.109Z",
               "EditorCaption": " [Dise\u00F1o]"
