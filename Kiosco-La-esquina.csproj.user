@@ -25,6 +25,9 @@
     <Compile Update="infrastructure\features\Products\ProductVisualizationFlow\ProductVisualizationFlow.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="infrastructure\features\Reports\Sales\Sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="infrastructure\features\Sales\SalesVisualizationFlow\SalesVisualizationFlow.cs">
       <SubType>Form</SubType>
     </Compile>

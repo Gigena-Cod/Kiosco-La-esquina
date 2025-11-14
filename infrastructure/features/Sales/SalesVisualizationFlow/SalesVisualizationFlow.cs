@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Windows.Forms;
 using Kiosco_La_esquina.domain.models;
@@ -11,21 +12,34 @@ namespace Kiosco_La_esquina.infrastructure.features.Sales.SalesVisualizationFlow
     {
         private readonly SaleService _saleService;
         private readonly EmployeeService _employeeService;
+        private readonly SaleDetailService _detailService;
+        private readonly ProductService _productService;
 
         private bool _initialized;
         private List<Sale> _sales = new();
         private List<Employee> _employees = new();
+
+        // cache productos: ID -> Nombre
+        private Dictionary<int, string> _productNames = new();
 
         public SalesVisualizationFlow()
         {
             InitializeComponent();
             _saleService = new SaleService();
             _employeeService = new EmployeeService();
+            _detailService = new SaleDetailService();
+            _productService = new ProductService();
         }
 
         private void SalesVisualizationFlow_Load(object sender, EventArgs e)
         {
-            ConfigureDataGrid();
+            ConfigureSalesGrid();
+            ConfigureSaleDetailsGrid();
+
+            // cache productos para usar en los detalles
+            _productNames = _productService
+                .GetAllProducts()
+                .ToDictionary(p => p.ID, p => p.Name ?? string.Empty);
 
             dateTimePickerFrom.Format = DateTimePickerFormat.Custom;
             dateTimePickerFrom.CustomFormat = "dd-MM-yyyy";
@@ -41,10 +55,15 @@ namespace Kiosco_La_esquina.infrastructure.features.Sales.SalesVisualizationFlow
             LoadEmployeesCombo();
             LoadSales(dateTimePickerFrom.Value, dateTimePickerTo.Value, null, null);
 
+            // cuando cambia la selección de ventas, cargamos detalle
+            dataGridViewSales.SelectionChanged += DataGridViewSales_SelectionChanged;
+
             _initialized = true;
         }
 
-        private void ConfigureDataGrid()
+        // =================== GRID IZQUIERDO (VENTAS) ===================
+
+        private void ConfigureSalesGrid()
         {
             dataGridViewSales.AutoGenerateColumns = false;
             dataGridViewSales.ReadOnly = true;
@@ -55,7 +74,7 @@ namespace Kiosco_La_esquina.infrastructure.features.Sales.SalesVisualizationFlow
             dataGridViewSales.Columns.Clear();
             dataGridViewSales.Columns.Add(new DataGridViewTextBoxColumn
             {
-                HeaderText = "ID",
+                HeaderText = "N° de Venta",
                 DataPropertyName = nameof(Sale.ID),
                 FillWeight = 12
             });
@@ -80,6 +99,92 @@ namespace Kiosco_La_esquina.infrastructure.features.Sales.SalesVisualizationFlow
                 FillWeight = 22
             });
         }
+
+        // =================== GRID DERECHO (DETALLE) ===================
+
+        private void ConfigureSaleDetailsGrid()
+        {
+            // ajustá el nombre si tu grid se llama distinto
+            dataGridViewSaleDetails.AutoGenerateColumns = false;
+            dataGridViewSaleDetails.ReadOnly = true;
+            dataGridViewSaleDetails.AllowUserToAddRows = false;
+            dataGridViewSaleDetails.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridViewSaleDetails.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            dataGridViewSaleDetails.Columns.Clear();
+            dataGridViewSaleDetails.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                HeaderText = "Producto",
+                DataPropertyName = "Product",
+                FillWeight = 50
+            });
+            dataGridViewSaleDetails.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                HeaderText = "Cantidad",
+                DataPropertyName = "Quantity",
+                FillWeight = 15
+            });
+            dataGridViewSaleDetails.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                HeaderText = "Precio unitario",
+                DataPropertyName = "UnitPrice",
+                DefaultCellStyle = { Format = "N2", Alignment = DataGridViewContentAlignment.MiddleRight },
+                FillWeight = 15
+            });
+            dataGridViewSaleDetails.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                HeaderText = "Subtotal",
+                DataPropertyName = "Subtotal",
+                DefaultCellStyle = { Format = "N2", Alignment = DataGridViewContentAlignment.MiddleRight },
+                FillWeight = 20
+            });
+        }
+
+        private void DataGridViewSales_SelectionChanged(object? sender, EventArgs e)
+        {
+            if (dataGridViewSales.CurrentRow == null)
+            {
+                dataGridViewSaleDetails.DataSource = null;
+                return;
+            }
+
+            if (dataGridViewSales.CurrentRow.DataBoundItem is not Sale sale)
+                return;
+
+            LoadSaleDetails(sale.ID);
+        }
+
+        private void LoadSaleDetails(int saleId)
+        {
+            // si tu SaleDetailService ya tiene un método por saleId, podés usarlo acá;
+            // si no, tiramos de todos y filtramos
+            var allDetails = _detailService.GetSaleDetails();
+            var details = allDetails
+                .Where(d => d.SaleId == saleId)
+                .ToList();
+
+            var view = details
+                .Select(d =>
+                {
+                    var productName = _productNames.TryGetValue(d.ProductId, out var name)
+                        ? name
+                        : $"Producto {d.ProductId}";
+
+                    return new
+                    {
+                        Product = productName,
+                        Quantity = d.Quantity,
+                        UnitPrice = d.UnitPrice,
+                        Subtotal = d.Subtotal
+                    };
+                })
+                .ToList();
+
+            dataGridViewSaleDetails.DataSource = null;
+            dataGridViewSaleDetails.DataSource = view;
+        }
+
+        // =================== RESTO: filtros de ventas ===================
 
         private void LoadEmployeesCombo()
         {
@@ -109,6 +214,9 @@ namespace Kiosco_La_esquina.infrastructure.features.Sales.SalesVisualizationFlow
             _sales = _saleService.GetSales(from, to, employeeId, saleId);
             dataGridViewSales.DataSource = null;
             dataGridViewSales.DataSource = _sales;
+
+            // al recargar ventas, limpiar detalle
+            dataGridViewSaleDetails.DataSource = null;
         }
 
         private void buttonFilter_Click(object sender, EventArgs e) => ApplyFilters();
@@ -151,26 +259,34 @@ namespace Kiosco_La_esquina.infrastructure.features.Sales.SalesVisualizationFlow
 
         private void buttonClear_Click(object sender, EventArgs e)
         {
-            // limpiar filtros
+            // evitar que los DateTimePickers disparen ValueChanged
+            dateTimePickerFrom.ValueChanged -= DatePickers_ValueChanged;
+            dateTimePickerTo.ValueChanged -= DatePickers_ValueChanged;
+
             saleIdTextBox.Clear();
             comboBoxEmployee.SelectedIndex = 0;
+
             dateTimePickerFrom.Value = DateTime.Today.AddDays(-7);
             dateTimePickerTo.Value = DateTime.Today;
+
+            // restaurar eventos
+            dateTimePickerFrom.ValueChanged += DatePickers_ValueChanged;
+            dateTimePickerTo.ValueChanged += DatePickers_ValueChanged;
+
             ApplyFilters();
         }
 
+
         private void saleIdTextBox_TextChanged(object sender, EventArgs e)
         {
-            // Filtra en vivo al escribir un número válido o al borrar
             var txt = saleIdTextBox.Text.Trim();
             if (txt.Length == 0 || int.TryParse(txt, out _))
                 ApplyFilters();
-            // si escribe letras, no dispara; evita ruido
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //TODO: Implemente funcionality for register new sale
+            // TODO: registrar nueva venta
         }
     }
 }
