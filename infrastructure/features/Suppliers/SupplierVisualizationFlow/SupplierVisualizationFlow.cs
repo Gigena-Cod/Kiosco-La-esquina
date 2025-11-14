@@ -1,4 +1,7 @@
-﻿using Kiosco_La_esquina.domain.services; 
+﻿using Kiosco_La_esquina.domain.services;
+using System.IO;
+using System.Text;
+
 
 namespace Kiosco_La_esquina.infrastructure.features.Suppliers.SupplierVisualizationFlow
 {

@@ -7,6 +7,7 @@ using Kiosco_La_esquina.infrastructure.features.Products.ProductCreationFlow;
 using Kiosco_La_esquina.infrastructure.features.Products.ProductDeleteFlow;
 using Kiosco_La_esquina.infrastructure.features.Products.ProductUpdateFlow;
 using Kiosco_La_esquina.infrastructure.features.Products.ProductVisualizationFlow;
+using Kiosco_La_esquina.infrastructure.features.Reports.Sales; 
 using Kiosco_La_esquina.infrastructure.features.Sales.SalesVisualizationFlow;
 using Kiosco_La_esquina.infrastructure.features.Suppliers.SupplierCreationFlow;
 using Kiosco_La_esquina.infrastructure.features.Suppliers.SupplierDeleteFlow;
@@ -120,6 +121,19 @@ namespace Kiosco_La_esquina
             SalesVisualizationFlow saleForm = new SalesVisualizationFlow();
             saleForm.Show();
         }
+
+        
+
+        private void ventasPorDíaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ventasPorMesToolStripMenuItem_Click(object sender, EventArgs e)
+        {Sales frm = new Sales();
+            frm.ShowDialog();
+        }
+
     }
 }
 

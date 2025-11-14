@@ -60,3 +60,6 @@ C:\Users\Nahuel Gigena\Documents\GitHub\Kiosco-La-esquina\obj\Debug\net8.0-windo
 C:\Users\Nahuel Gigena\Documents\GitHub\Kiosco-La-esquina\obj\Debug\net8.0-windows\Kiosco_La_esquina.infrastructure.features.Products.ProductUpdateFlow.ProductUpdateFlow.resources
 C:\Users\Nahuel Gigena\Documents\GitHub\Kiosco-La-esquina\obj\Debug\net8.0-windows\Kiosco_La_esquina.infrastructure.features.Products.ProductDeleteFlow.ProductDeleteFlow.resources
 C:\Users\Nahuel Gigena\Documents\GitHub\Kiosco-La-esquina\obj\Debug\net8.0-windows\Kiosco_La_esquina.infrastructure.features.Sales.SalesVisualizationFlow.SalesVisualizationFlow.resources
+C:\Users\Nahuel Gigena\Documents\GitHub\Kiosco-La-esquina\obj\Debug\net8.0-windows\Kiosco_La_esquina.infrastructure.features.Reports.Sales.Sales.resources
+C:\Users\Nahuel Gigena\Documents\GitHub\Kiosco-La-esquina\bin\Debug\net8.0-windows\WinForms.DataVisualization.Utilities.dll
+C:\Users\Nahuel Gigena\Documents\GitHub\Kiosco-La-esquina\bin\Debug\net8.0-windows\WinForms.DataVisualization.dll

@@ -3,32 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\suppliers\\suppliervisualizationflow\\suppliervisualizationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\suppliers\\suppliervisualizationflow\\suppliervisualizationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\reports\\sales\\sales.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\reports\\sales\\sales.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\suppliers\\suppliervisualizationflow\\suppliervisualizationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\suppliers\\suppliervisualizationflow\\suppliervisualizationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\sales\\salesvisualizationflow\\salesvisualizationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\sales\\salesvisualizationflow\\salesvisualizationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\products\\productvisualizationflow\\productvisualizationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\products\\productvisualizationflow\\productvisualizationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\reports\\sales\\sales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\reports\\sales\\sales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\products\\productvisualizationflow\\productvisualizationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\products\\productvisualizationflow\\productvisualizationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\employees\\employeevisualisationflow\\employeevisualisationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\employees\\employeevisualisationflow\\employeevisualisationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\employees\\employeevisualisationflow\\employeevisualisationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\employees\\employeevisualisationflow\\employeevisualisationflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|c:\\users\\nahuel gigena\\documents\\github\\kiosco-la-esquina\\infrastructure\\features\\reports\\sales\\sales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D21322E2-EA4A-40B4-B50C-4732F21A62D0}|Kiosco-La-esquina.csproj|solutionrelative:infrastructure\\features\\reports\\sales\\sales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,88 +35,64 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SupplierVisualizationFlow.cs",
-              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Suppliers\\SupplierVisualizationFlow\\SupplierVisualizationFlow.cs",
-              "RelativeDocumentMoniker": "infrastructure\\features\\Suppliers\\SupplierVisualizationFlow\\SupplierVisualizationFlow.cs",
-              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Suppliers\\SupplierVisualizationFlow\\SupplierVisualizationFlow.cs*",
-              "RelativeToolTip": "infrastructure\\features\\Suppliers\\SupplierVisualizationFlow\\SupplierVisualizationFlow.cs*",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAiwJcAAAAAAAAAAAAAAA==",
+              "Title": "Sales.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Reports\\Sales\\Sales.Designer.cs",
+              "RelativeDocumentMoniker": "infrastructure\\features\\Reports\\Sales\\Sales.Designer.cs",
+              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Reports\\Sales\\Sales.Designer.cs*",
+              "RelativeToolTip": "infrastructure\\features\\Reports\\Sales\\Sales.Designer.cs*",
+              "ViewState": "AgIAADIBAAAAAAAAAAAiwFkBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T14:36:58.677Z",
+              "WhenOpened": "2025-11-14T15:16:43.064Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SupplierVisualizationFlow.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Suppliers\\SupplierVisualizationFlow\\SupplierVisualizationFlow.cs",
-              "RelativeDocumentMoniker": "infrastructure\\features\\Suppliers\\SupplierVisualizationFlow\\SupplierVisualizationFlow.cs",
-              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Suppliers\\SupplierVisualizationFlow\\SupplierVisualizationFlow.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "infrastructure\\features\\Suppliers\\SupplierVisualizationFlow\\SupplierVisualizationFlow.cs [Dise\u00F1o]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T14:36:56.16Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SalesVisualizationFlow.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Sales\\SalesVisualizationFlow\\SalesVisualizationFlow.cs",
-              "RelativeDocumentMoniker": "infrastructure\\features\\Sales\\SalesVisualizationFlow\\SalesVisualizationFlow.cs",
-              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Sales\\SalesVisualizationFlow\\SalesVisualizationFlow.cs [Dise\u00F1o]",
-              "RelativeToolTip": "infrastructure\\features\\Sales\\SalesVisualizationFlow\\SalesVisualizationFlow.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T14:36:49.212Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ProductVisualizationFlow.cs",
-              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Products\\ProductVisualizationFlow\\ProductVisualizationFlow.cs",
-              "RelativeDocumentMoniker": "infrastructure\\features\\Products\\ProductVisualizationFlow\\ProductVisualizationFlow.cs",
-              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Products\\ProductVisualizationFlow\\ProductVisualizationFlow.cs",
-              "RelativeToolTip": "infrastructure\\features\\Products\\ProductVisualizationFlow\\ProductVisualizationFlow.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAiwIgAAABlAAAAAAAAAA==",
+              "Title": "Sales.cs",
+              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Reports\\Sales\\Sales.cs",
+              "RelativeDocumentMoniker": "infrastructure\\features\\Reports\\Sales\\Sales.cs",
+              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Reports\\Sales\\Sales.cs",
+              "RelativeToolTip": "infrastructure\\features\\Reports\\Sales\\Sales.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvyAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T14:28:37.665Z",
+              "WhenOpened": "2025-11-14T15:16:35.911Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ProductVisualizationFlow.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Products\\ProductVisualizationFlow\\ProductVisualizationFlow.cs",
-              "RelativeDocumentMoniker": "infrastructure\\features\\Products\\ProductVisualizationFlow\\ProductVisualizationFlow.cs",
-              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Products\\ProductVisualizationFlow\\ProductVisualizationFlow.cs [Dise\u00F1o]",
-              "RelativeToolTip": "infrastructure\\features\\Products\\ProductVisualizationFlow\\ProductVisualizationFlow.cs [Dise\u00F1o]",
+              "Title": "Sales.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Reports\\Sales\\Sales.cs",
+              "RelativeDocumentMoniker": "infrastructure\\features\\Reports\\Sales\\Sales.cs",
+              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Reports\\Sales\\Sales.cs [Dise\u00F1o]",
+              "RelativeToolTip": "infrastructure\\features\\Reports\\Sales\\Sales.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T14:28:35.725Z",
+              "WhenOpened": "2025-11-14T15:06:27.109Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EmployeeVisualisationFlow.cs",
-              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Employees\\EmployeeVisualisationFlow\\EmployeeVisualisationFlow.cs",
-              "RelativeDocumentMoniker": "infrastructure\\features\\Employees\\EmployeeVisualisationFlow\\EmployeeVisualisationFlow.cs",
-              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Employees\\EmployeeVisualisationFlow\\EmployeeVisualisationFlow.cs",
-              "RelativeToolTip": "infrastructure\\features\\Employees\\EmployeeVisualisationFlow\\EmployeeVisualisationFlow.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAUwHIAAAAHAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\Main.cs",
+              "RelativeDocumentMoniker": "Main.cs",
+              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\Main.cs",
+              "RelativeToolTip": "Main.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T14:27:05.225Z",
+              "WhenOpened": "2025-11-14T15:01:22.374Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EmployeeVisualisationFlow.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Employees\\EmployeeVisualisationFlow\\EmployeeVisualisationFlow.cs",
-              "RelativeDocumentMoniker": "infrastructure\\features\\Employees\\EmployeeVisualisationFlow\\EmployeeVisualisationFlow.cs",
-              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\infrastructure\\features\\Employees\\EmployeeVisualisationFlow\\EmployeeVisualisationFlow.cs [Dise\u00F1o]",
-              "RelativeToolTip": "infrastructure\\features\\Employees\\EmployeeVisualisationFlow\\EmployeeVisualisationFlow.cs [Dise\u00F1o]",
+              "DocumentIndex": 2,
+              "Title": "Main.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\Main.cs",
+              "RelativeDocumentMoniker": "Main.cs",
+              "ToolTip": "C:\\Users\\Nahuel Gigena\\Documents\\GitHub\\Kiosco-La-esquina\\Main.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Main.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T14:27:02.415Z",
+              "WhenOpened": "2025-11-14T15:01:17.434Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]
