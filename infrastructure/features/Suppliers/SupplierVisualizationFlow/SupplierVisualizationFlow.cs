@@ -1,4 +1,5 @@
 ﻿using Kiosco_La_esquina.domain.services;
+using System.Diagnostics;
 using System.IO;
 using System.Text;
 
@@ -25,6 +26,8 @@ namespace Kiosco_La_esquina.infrastructure.features.Suppliers.SupplierVisualizat
             LoadSuppliers();
         }
 
+        private const string WhatsAppColumnName = "WhatsApp";
+
         private void ConfigureDataGridView()
         {
             dataGridViewSuppliers.AutoGenerateColumns = false;
@@ -34,15 +37,13 @@ namespace Kiosco_La_esquina.infrastructure.features.Suppliers.SupplierVisualizat
             dataGridViewSuppliers.ReadOnly = true;
             dataGridViewSuppliers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-            // Limpiar columnas si hay algo
             dataGridViewSuppliers.Columns.Clear();
 
-            // Crear columnas
             dataGridViewSuppliers.Columns.Add(new DataGridViewTextBoxColumn
             {
                 Name = "Id",
                 HeaderText = "ID",
-                DataPropertyName = "Id",
+                DataPropertyName = "ID",
                 Width = 50
             });
 
@@ -62,7 +63,6 @@ namespace Kiosco_La_esquina.infrastructure.features.Suppliers.SupplierVisualizat
                 Width = 150
             });
 
-
             dataGridViewSuppliers.Columns.Add(new DataGridViewTextBoxColumn
             {
                 Name = "Address",
@@ -78,7 +78,67 @@ namespace Kiosco_La_esquina.infrastructure.features.Suppliers.SupplierVisualizat
                 DataPropertyName = "Phone",
                 Width = 100
             });
+
+            // Columna de botón WhatsApp
+            var whatsappCol = new DataGridViewButtonColumn
+            {
+                Name = WhatsAppColumnName,
+                HeaderText = "WhatsApp",
+                Text = "Enviar",
+                UseColumnTextForButtonValue = true,
+                Width = 90
+            };
+            dataGridViewSuppliers.Columns.Add(whatsappCol);
+
+            // handler para click en botones
+            dataGridViewSuppliers.CellContentClick += dataGridViewSuppliers_CellContentClick;
         }
+
+        private void dataGridViewSuppliers_CellContentClick(object? sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0) return;
+
+            // sólo reaccionar si es la columna de WhatsApp
+            if (dataGridViewSuppliers.Columns[e.ColumnIndex].Name != WhatsAppColumnName)
+                return;
+
+            var supplier = dataGridViewSuppliers.Rows[e.RowIndex].DataBoundItem
+                as Kiosco_La_esquina.domain.models.Supplier;
+
+            if (supplier == null)
+                return;
+
+            if (string.IsNullOrWhiteSpace(supplier.Phone))
+            {
+                MessageBox.Show("El proveedor no tiene teléfono configurado.");
+                return;
+            }
+
+            // normalizar teléfono (ajustá a tu formato real)
+            string phone = supplier.Phone
+                .Replace(" ", "")
+                .Replace("-", "")
+                .Replace("(", "")
+                .Replace(")", "")
+                .Replace("+", "");
+
+            // mensaje por defecto
+            string message = $"Hola {supplier.Contact_Name}, te escribo desde el kiosco por un pedido.";
+            string encoded = Uri.EscapeDataString(message);
+
+            string url = $"https://wa.me/{phone}?text={encoded}";
+
+            try
+            {
+                Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo abrir WhatsApp:\n" + ex.Message,
+                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
 
         private void LoadSuppliers()
         {
